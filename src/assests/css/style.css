@@ -1,0 +1,58 @@
+.service_banner{
+    background-image: url("../images/page-banner.png");
+    height: 60vh;
+    display: flex;
+    padding: 15px 100px 15px 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service_banner_div1{
+    padding: 15px;
+    width: 40%;
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
+.service_banner_div2{
+    border-radius: 50%;
+    background-color: white;
+    padding: 100px 15px 15px 15px;
+    height: 35vh;
+    text-align: center;
+    width: 55%;
+    color: #0a83c1;
+    opacity: 0.75;
+}
+
+.service_body{
+    padding: 100px;
+    height: auto;
+    display: flex;
+    background-image: url("../images/parallax-bg-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: space-around;
+}
+
+.service_body_div1{
+    padding-top: 80px;
+    opacity: 0.75;
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    font-size: 25px;
+}
+.service_body_div2{
+    padding: 80px;
+    border-radius: 50%;
+    opacity: 0.75;
+    font-size: 16px !important;
+    background-color: #0a83c1;
+    width: 40%;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
