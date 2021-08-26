@@ -1,10 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
 import '../../../assests/css/style.css';
 import VA from '../../../assests/images/what-is-va.png'
 import PT from '../../../assests/images/what-is-pt.png'
-=======
->>>>>>> a0045c1786229dd3f96a3b560fb437f585ff5922
 
 const OurServices = () => {
     return(
