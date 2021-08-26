@@ -114,13 +114,13 @@ const AboutUs = () => {
                         
                             <Grid item lg={3} md={6} xs={12} sm={12}>
                             <img className="img49" src={img49}/>
-                            <p className="p">Ankit Bhadouria</p>
+                            <p className="p">Ankit Bhadauria</p>
                             </Grid>
 
 
                             <Grid item lg={3} md={6} xs={12} sm={12}>
                             <img className="img49" src={img49}/>
-                            <p className="p">Govind S. Bedi</p>
+                            <p className="p">Gobind Singh Bedi</p>
 
                             </Grid>
 
