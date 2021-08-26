@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../assests/css/stycle.css'
+
 const OurServices = () => {
     return(
         <>
