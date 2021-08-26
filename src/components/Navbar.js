@@ -65,9 +65,21 @@ function Navbar() {
                 </Link>
               </li>
               <li className='nav-btn'>
+              {button ? (
                   <Link to='/contactus' className='btn-link'>
-                    <Button buttonStyle='btn--outline'>Contact Us</Button>
+                    <Button buttonStyle='btn--outline'>Contact us</Button>
                   </Link>
+                ) : (
+                  <Link to='/contactus' className='btn-link'>
+                    <Button
+                      buttonStyle='btn--outline'
+                      buttonSize='btn--mobile'
+                      onClick={closeMobileMenu}
+                    >
+                      Contact us
+                    </Button>
+                  </Link>
+                )}
               </li>
             </ul>
           </div>
