@@ -15,27 +15,10 @@ function ContactUs() {
       <Card className='footer-container' style={{ backgroundColor: "gray", marginLeft: "20%", marginRight: "20%", marginTop: "5%", marginBottom: "5%", borderRadius: "10px", backgroundColor: "#45B3A3" }}>
         <div className=''>
           <form>
-            <input
-              className='footer-input'
-              name='name'
-              type='text'
-              placeholder='Your Name'
-            />
-
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-
+            <input className='footer-input' name='name' type='text' placeholder='Your Name' />
+            <input className='footer-input' name='email' type='email' placeholder='Your Email' />
             <div>
-              <input
-                className='footer-input1'
-                name='Description'
-                type='textArea'
-                placeholder='Description'
-              />
+              <input className='footer-input1' name='Description' type='textArea' placeholder='Description' />
             </div>
           </form>
           <Button buttonStyle='btn--outline'>Subscribe</Button>
