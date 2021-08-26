@@ -25,7 +25,7 @@ const AboutUs = () => {
                 </Grid>
                 <Grid item lg={9} md={10} sm={12} xs={12} id="qt">
                     <h1 style={{fontSize: "25px", marginBottom: "10px", marginTop: "10px",marginLeft:"5px" }}>About Us</h1>
-                    <Card style={{ fontSize: "20px",borderRadius:"10px",backgroundColor:"rgb(69, 179, 163,0.6)",paddingLeft:"1%",marginLeft:"5px" }}>
+                    <Card style={{ fontSize: "20px",borderRadius:"10px",backgroundColor:"white",padding:"5%",marginLeft:"5px" }}>
              What we do is rather simple. We provide our customers with the ideal Penetration Testing services. To help you understand this better, we do a podcast with our clients where they talk about their experiences with us and how they see us. We want you to hear all that we offer and how well it works out straight from our clients. So, pull out those headphones and listen close, because these are some pleasant journeys with VAPT.
 
                     </Card>
