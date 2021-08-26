@@ -70,38 +70,11 @@ function ContactUs() {
 
                          
                         </Grid>
-                        
-
-
-                       
-
-                        
-
-                        
-
-                        
-                       
                     </Grid>
-
-
-                
-            
-  
-          
-
-
-             
-         
-        
-
-                    </Card>
+              </Card>
                            
                             </Grid>
-
-
-                           
-                           
-                        </Grid>
+            </Grid>
                    
                 </Grid>
 

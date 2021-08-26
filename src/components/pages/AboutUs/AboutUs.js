@@ -100,10 +100,7 @@ const AboutUs = () => {
                           </Grid>
 
                         
-
-                          
-                         
-                      </Grid>
+                    </Grid>
                   
               </Grid>
 
@@ -137,9 +134,6 @@ const AboutUs = () => {
                         </Grid>
                     
                 </Grid>
-
-             
-                
 
             </Grid>
             <div style={{marginTop:"150px"}}>
