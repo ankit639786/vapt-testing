@@ -16,21 +16,52 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          Join our exclusive membership to receive the latest news and trends
         </p>
         <p className='footer-subscription-text'>
-        Lorem ipsum dolor sit amet.
+          You can unsubscribe at any time.
         </p>
         <div className='input-areas'>
-          <form>
+          {/* <form>
             <input
               className='footer-input'
               name='email'
               type='email'
               placeholder='Your Email'
             />
+            <be/>
+
+            <input
+              className='footer-input'
+              name='email'
+              type='email'
+              placeholder='Your Email'
+            />
+
+           <input
+              className='footer-input'
+              name='email'
+              type='email'
+              placeholder='Your Email'
+            />
             <Button buttonStyle='btn--outline'>Subscribe</Button>
-          </form>
+          </form> */}
+
+<form class="myForm">
+  <div id="contact-details">
+  <label for="customer_name">Name </label>
+  <input type="text" name="customer_name" id="customer_name" required/>
+  <label for="email_address">Email </label>
+  <input type="email" name="email_address" id="email_address"/>
+  <label for="phone">Phone </label>
+  <input type="tel" name="phone" id="phone"/>
+  </div>
+  <div id="comment-box">
+  	<label for="comments">Comments</label>
+  	<textarea name="comments" id="comments" maxlength="500"></textarea>
+  </div>
+  <button>Submit</button>
+</form>
         </div>
       </section>
       <div className='footer-links'>
@@ -73,10 +104,10 @@ function Footer() {
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
               <MdFingerprint className='navbar-icon' />
-              VAPT
+              LAVISH
             </Link>
           </div>
-          <small className='website-rights'>@sb2021</small>
+          <small className='website-rights'>LAVISH © 2020</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
