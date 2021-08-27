@@ -55,7 +55,7 @@ export const homeObjFour = {
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
   buttonLabel: 'Lorem elit',
-  imgStart: 'start',
+  imgStart: '',
   img: image3,
   alt: 'Vault'
 };

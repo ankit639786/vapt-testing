@@ -17,17 +17,9 @@ function HeroSection({
 }) {
   return (
     <>
-      <div
-        className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}
-      >
+      <div className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'} >
         <div className='container'>
-          <div
-            className='row home__hero-row'
-            style={{
-              display: 'flex',
-              flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'
-            }}
-          >
+          <div className='row home__hero-row' style={{display: 'flex',flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'}}>
             <div className='col'>
               <div className='home__hero-text-wrapper'>
                 <div className='top-line'>{topLine}</div>
@@ -43,7 +35,7 @@ function HeroSection({
                 >
                   {description}
                 </p>
-                <Link to='/sign-up'>
+                <Link to=''>
                   <Button buttonSize='btn--wide' buttonColor='blue'>
                     {buttonLabel}
                   </Button>

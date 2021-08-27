@@ -6,7 +6,8 @@ import Products from './components/pages/Products/Products';
 import SignUp from './components/pages/SignUp/SignUp';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Footer from './components/pages/Footer.js/Footer';
+import Footer from './components/pages/Footer/Footer';
+import Contact from './components/pages/Contact/Contact';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path='/' exact component={Home} />
         <Route path='/services' component={Services} />
         <Route path='/aboutus' component={Products} />
-        <Route path='/contactus' component={SignUp} />
+        <Route path='/contactus' component={Contact} />
       </Switch>
       <Footer />
     </Router>

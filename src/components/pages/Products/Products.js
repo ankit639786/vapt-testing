@@ -6,13 +6,13 @@ import Pricing from '../../Pricing';
 function Products() {
   return (
     <>
+      <HeroSection {...homeObjTwo} />
       <HeroSection {...homeObjOne} />
-      <Pricing/>
+      {/* <Pricing/> */}
       <HeroSection {...homeObjThree} />
       {/* <Pricing/> */}
 
 
-      {/* <HeroSection {...homeObjTwo} /> */}
     </>
   );
 }

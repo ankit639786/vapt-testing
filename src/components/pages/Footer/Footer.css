@@ -1,5 +1,5 @@
 .footer-container {
-  background-color:gray;
+  background-color:#09091e;
   padding: 4rem 0 2rem 0;
   display: flex;
   flex-direction: column;
@@ -169,7 +169,8 @@
   grid-template-rows: 12em 2em;  
   grid-template-columns: 12em 1fr;
   grid-gap: .8em;
-  background:black;
+  background-image: url("../../assests/images/cyber-scurity3.jpg");
+  /* background:black; */
   padding: 1.2em;
 }
 .myForm label  {
