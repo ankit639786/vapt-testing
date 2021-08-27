@@ -7,7 +7,12 @@ function Products() {
   return (
     <>
       <HeroSection {...homeObjOne} />
-      <HeroSection {...homeObjTwo} />
+      <Pricing/>
+      <HeroSection {...homeObjThree} />
+      {/* <Pricing/> */}
+
+
+      {/* <HeroSection {...homeObjTwo} /> */}
     </>
   );
 }
