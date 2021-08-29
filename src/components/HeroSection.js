@@ -35,7 +35,7 @@ function HeroSection({
                 >
                   {description}
                 </p>
-                <Link to=''>
+                <Link to='#'>
                   <Button buttonSize='btn--wide' buttonColor='blue'>
                     {buttonLabel}
                   </Button>
