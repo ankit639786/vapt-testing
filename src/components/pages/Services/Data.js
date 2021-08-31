@@ -49,7 +49,7 @@ export const homeObjFour = {
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit',
   buttonLabel: 'Lorem ipsum',
-  imgStart: 'start',
+  imgStart: '',
   img: 'images/svg-8.svg',
   alt: 'Vault'
 };

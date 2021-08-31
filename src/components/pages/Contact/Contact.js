@@ -1,4 +1,5 @@
 import React from 'react';
+import './Contact.css';
 
 const Contact = () => {
     const homeObjFour = {
@@ -44,7 +45,7 @@ const Contact = () => {
                         </div>
                         <div className='col'>
                             <div className='home__hero-img-wrapper'>
-                                <form class="myForm">
+                                <form className="myForm" style={{marginTop:"-50px"}}>
                                     <div id="contact-details">
                                         <label for="customer_name">Name </label>
                                         <input type="text" name="customer_name" id="customer_name" required />

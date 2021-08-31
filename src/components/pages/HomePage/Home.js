@@ -11,7 +11,7 @@ function Home() {
       <HeroSection {...homeObjTwo} />
       <HeroSection {...homeObjFive} />
       <HeroSection {...homeObjFour} />
-      <HeroSection {...homeObjFive} />
+      <HeroSection {...homeObjSix} />
     </>
   );
 }
