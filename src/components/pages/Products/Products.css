@@ -1,0 +1,13 @@
+.hi{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#09091F;
+}
+
+.hi img:hover {
+   transform: scale(1.5);
+   border-radius: 10px;
+  }
