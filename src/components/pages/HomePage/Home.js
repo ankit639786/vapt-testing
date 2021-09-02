@@ -25,11 +25,11 @@ function Home() {
       <HeroSection {...homeObjTwo} />
       <HeroSection {...homeObjFive} />
       <Cards/>
-      <Contact />
-      <HeroSection {...homeObjFour} />
-      <HeroSection {...homeObjFive} />
+      {/* <Contact /> */}
+      {/* <HeroSection {...homeObjFour} /> */}
+      {/* <HeroSection {...homeObjFive} /> */}
       
-      <h1 style={{textAlign:'center',fontSize:"45px"}}>Testing Services</h1>
+      <h1 style={{textAlign:'center',fontSize:"45px", marginTop:"5rem"}}>Testing Services</h1>
 
       <Carousel breakPoints={breakPoints} swipeable={true} className="hi">
         <Item><img src={img} style={{borderRadius:"5px"}}/></Item>
