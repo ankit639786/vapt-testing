@@ -18,26 +18,26 @@ import { Link } from 'react-router-dom';
 function Card() {
   return (
     <IconContext.Provider value={{ color: '#fff', size: 64 }}>
-      <div>
+      <div className="pricing__section" style={{padding:"10px 0"}}>
         <div className='pricing__wrapper'>
-          <Grid item lg={12} container style={{ textAlign: "center", marginTop: "20px", marginBottom: "20px", textShadow: "2px 2px lightgray", color: "#09091F", fontSize: "14px" }}>
+          <Grid item lg={12} container style={{ textAlign: "center", marginTop: "20px", marginBottom: "20px", textShadow: "2px 2px #f00946", color: "white", fontSize: "14px" }}>
             <h1 style={{ textAlign: "center", width: "100%" }}>We offer a wide range of services</h1>
           </Grid>
           <Grid item lg={12} container style={{ margin: "auto", textAlign: "center" }} >
             <Grid item lg={4} >
               <img style={{ width: "90%", marginBottom: "20px" }} src={service22} alt="" />
-              <h1 style={{ color: "#09091F", textShadow: "2px 2px lightgray" }}>Network</h1>
-              <h2 style={{ color: "#09091F", textShadow: "2px 2px lightgray" }}> Security Audit</h2>
+              <h1 style={{ color: "white", textShadow: "2px 2px #f00946" }}>Network</h1>
+              <h2 style={{ color: "white", textShadow: "2px 2px #f00946" }}> Security Audit</h2>
             </Grid>
             <Grid item lg={4} >
               <img style={{ width: "90%", marginBottom: "20px" }} src={service33} alt="" />
-              <h1 style={{ color: "#09091F", textShadow: "2px 2px lightgray" }}>Web Application</h1>
-              <h2 style={{ color: "#09091F", textShadow: "2px 2px lightgray" }}> Penetration Testing</h2>
+              <h1 style={{ color: "white", textShadow: "2px 2px #f00946" }}>Web Application</h1>
+              <h2 style={{ color: "white", textShadow: "2px 2px #f00946" }}> Penetration Testing</h2>
             </Grid>
             <Grid item lg={4}  >
               <img style={{ width: "90%", marginBottom: "20px" }} src={service44} alt="" />
-              <h1 style={{ color: "#09091F", textShadow: "2px 2px lightgray" }}>Mobile</h1>
-              <h2 style={{ color: "#09091F", textShadow: "2px 2px lightgray" }}> Penetration Testing</h2>
+              <h1 style={{ color: "white", textShadow: "2px 2px #f00946" }}>Mobile</h1>
+              <h2 style={{ color: "white", textShadow: "2px 2px #f00946" }}> Penetration Testing</h2>
             </Grid>
             {/* <Grid item lg={1}>
             </Grid> */}
@@ -46,18 +46,18 @@ function Card() {
 
             <Grid item lg={4}  >
               <img style={{ width: "90%", marginBottom: "20px" }} src={service55} alt="" />
-              <h1 style={{ color: "#09091F", textShadow: "2px 2px lightgray" }}>Wireless</h1>
-              <h2 style={{ color: "#09091F", textShadow: "2px 2px lightgray", marginBottom: "40px" }}> Security Assessmen9</h2>
+              <h1 style={{ color: "white", textShadow: "2px 2px #f00946" }}>Wireless</h1>
+              <h2 style={{ color: "white", textShadow: "2px 2px #f00946", marginBottom: "40px" }}> Security Assessmen9</h2>
             </Grid>
             <Grid item lg={4} >
               <img style={{ width: "90%", marginBottom: "20px" }} src={service77} alt="" />
-              <h1 style={{ color: "#09091F", textShadow: "2px 2px lightgray" }}>Cloud</h1>
-              <h2 style={{ color: "#09091F", textShadow: "2px 2px lightgray", marginBottom: "40px" }}> Security Assessmen9</h2>
+              <h1 style={{ color: "white", textShadow: "2px 2px #f00946" }}>Cloud</h1>
+              <h2 style={{ color: "white", textShadow: "2px 2px #f00946", marginBottom: "40px" }}> Security Assessmen9</h2>
             </Grid>
             <Grid item lg={4}  >
               <img style={{ width: "90%", marginBottom: "20px" }} src={service88} alt="" />
-              <h1 style={{ color: "#09091F", textShadow: "2px 2px lightgray" }}>Social </h1>
-              <h2 style={{ color: "#09091F", textShadow: "2px 2px lightgray", marginBottom: "40px" }}> Assessment</h2>
+              <h1 style={{ color: "white", textShadow: "2px 2px #f00946" }}>Social </h1>
+              <h2 style={{ color: "white", textShadow: "2px 2px #f00946", marginBottom: "40px" }}> Assessment</h2>
             </Grid>
             {/* <Grid item lg={1}>
             </Grid> */}

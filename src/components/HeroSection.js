@@ -13,7 +13,9 @@ function HeroSection({
   buttonLabel,
   img,
   alt,
-  imgStart
+  imgStart,
+  redirectPage,
+  descriptionArr
 }) {
   return (
     <>
@@ -22,24 +24,25 @@ function HeroSection({
           <div className='row home__hero-row' style={{display: 'flex',flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'}}>
             <div className='col'>
               <div className='home__hero-text-wrapper'>
-                <div className='top-line'>{topLine}</div>
+                {topLine&&<div className='top-line'>{topLine}</div>}
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
                 </h1>
-                <p
-                  className={
-                    lightTextDesc
-                      ? 'home__hero-subtitle'
-                      : 'home__hero-subtitle dark'
-                  }
-                >
+                <p className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
                   {description}
                 </p>
-                <Link to='#'>
+                {
+                  descriptionArr?.map((ele,i) =>
+                    <p className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
+                      {`${i+1}. ${ele}`}
+                    </p>
+                  )
+                }
+                {buttonLabel&&<Link to={redirectPage}>
                   <Button buttonSize='btn--wide' buttonColor='blue'>
                     {buttonLabel}
                   </Button>
-                </Link>
+                </Link>}
               </div>
             </div>
             <div className='col'>

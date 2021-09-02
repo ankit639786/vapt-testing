@@ -6,10 +6,10 @@ const Contact = () => {
         lightBg: true,
         lightText: false,
         lightTextDesc: false,
-        topLine: 'Lorem ipsum',
-        headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet',
+        topLine: '',
+        headline: 'Contact Us',
         description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit ametLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet',
         buttonLabel: 'Lorem ipsum',
         imgStart: 'start',
         img: 'images/svg-8.svg',
@@ -19,11 +19,11 @@ const Contact = () => {
     return (
         <>
             <div className={homeObjFour?.lightBg ? 'home__hero-section' : 'home__hero-section darkBg'} >
-                <div className='container'>
+                <div className='container' style={{paddingTop:"3rem"}}>
                     <div className='row home__hero-row' style={{ display: 'flex', flexDirection: homeObjFour?.imgStart === 'start' ? 'row-reverse' : 'row' }}>
                         <div className='col'>
                             <div className='home__hero-text-wrapper'>
-                                <div className='top-line'>{homeObjFour?.topLine}</div>
+                                {homeObjFour?.topLine&&<div className='top-line'>{homeObjFour?.topLine}</div>}
                                 <h1 className={homeObjFour?.lightText ? 'heading' : 'heading dark'}>
                                     {homeObjFour?.headline}
                                 </h1>

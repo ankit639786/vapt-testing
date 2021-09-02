@@ -1,7 +1,8 @@
 import React from 'react';
 import HeroSection from '../../HeroSection';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive, homeObjSix } from './Data';
-// import Pricing from '../../Pricing';
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from './Data';
+import Cards from "./Card";
+import Contact from '../Contact/Contact'
 
 function Home() {
   return (
@@ -10,8 +11,8 @@ function Home() {
       <HeroSection {...homeObjThree} />
       <HeroSection {...homeObjTwo} />
       <HeroSection {...homeObjFive} />
-      <HeroSection {...homeObjFour} />
-      <HeroSection {...homeObjSix} />
+      <Cards/>
+      <Contact />
     </>
   );
 }
