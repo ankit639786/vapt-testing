@@ -4,8 +4,8 @@ export const homeObjOne = {
   lightTextDesc: true,
   topLine: 'Exclusive Access',
   headline: 'Lorem ipsum',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit',
+  description:"",
+  r:["hii","kjhm"],
   buttonLabel: 'Lorem ipsum',
   imgStart: '',
   img: 'images/svg-1.svg',
@@ -47,7 +47,7 @@ export const homeObjFour = {
   topLine: 'Lorem ipsum',
   headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit',
+     ["hii","jiii"],
   buttonLabel: 'Lorem ipsum',
   imgStart: '',
   img: 'images/svg-8.svg',
