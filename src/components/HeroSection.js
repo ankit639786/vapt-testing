@@ -13,13 +13,15 @@ function HeroSection({
   buttonLabel,
   img,
   alt,
-  imgStart
+  imgStart,
+  descriptionArr
 }) {
+  console.log("gobind", description);
   return (
     <>
       <div className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'} >
         <div className='container'>
-          <div className='row home__hero-row' style={{display: 'flex',flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'}}>
+          <div className='row home__hero-row' style={{ display: 'flex', flexDirection: imgStart === 'start' ? 'row-reverse' : 'row' }}>
             <div className='col'>
               <div className='home__hero-text-wrapper'>
                 <div className='top-line'>{topLine}</div>
@@ -27,14 +29,28 @@ function HeroSection({
                   {headline}
                 </h1>
                 <p
-                  className={
-                    lightTextDesc
-                      ? 'home__hero-subtitle'
-                      : 'home__hero-subtitle dark'
-                  }
-                >
-                  {description}
-                </p>
+                    className={
+                      lightTextDesc
+                        ? 'home__hero-subtitle'
+                        : 'home__hero-subtitle dark'
+                    }
+                  >
+                    {description&&description}
+                  </p>
+                {descriptionArr?.map((e,i) =>
+                  <p
+                    className={
+                      lightTextDesc
+                        ? 'home__hero-subtitle'
+                        : 'home__hero-subtitle dark'
+                    }
+                  >
+                    {`${i+1}. ${e}`}
+                  </p>
+                )
+                
+                }
+
                 <Link to='#'>
                   <Button buttonSize='btn--wide' buttonColor='blue'>
                     {buttonLabel}

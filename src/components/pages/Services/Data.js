@@ -3,10 +3,9 @@ export const homeObjOne = {
   lightText: true,
   lightTextDesc: true,
   topLine: 'Exclusive Access',
-  headline: 'Lorem ipsum',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit',
-  buttonLabel: 'Lorem ipsum',
+  headline: 'ASSESSMENT SERVICES',
+  description:"To successfully protect your organisation against cyber threats, it’s imperative to begin by identifying where its security weaknesses lie. ",
+  buttonLabel: 'See More',
   imgStart: '',
   img: 'images/svg-1.svg',
   alt: 'Credit Card'
@@ -30,11 +29,11 @@ export const homeObjThree = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'Lorem ipsum',
-  headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit",
-  buttonLabel: 'Lorem ipsum',
+  topLine: 'HOW OUR SERVICE WORKS',
+  headline: 'The visibility to detect The context and actions to respond',
+  description: "",
+  descriptionArr: ["Ingestion", "Response", "Analytics", "Investigation"],
+  buttonLabel: 'See More',
   imgStart: 'start',
   img: 'images/svg-7.svg',
   alt: 'Vault'
@@ -44,11 +43,10 @@ export const homeObjFour = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Lorem ipsum',
-  headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit',
-  buttonLabel: 'Lorem ipsum',
+  topLine: 'VAPT Services',
+  headline: 'VAPT Security Audit Services',
+  description:"VAPT Service is the combination of two different Security Services one is Vulnerability Assessment (VA) & Penetration Testing (PT).",
+  buttonLabel: 'See More',
   imgStart: '',
   img: 'images/svg-8.svg',
   alt: 'Vault'
