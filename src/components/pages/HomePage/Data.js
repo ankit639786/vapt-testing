@@ -25,7 +25,7 @@ export const homeObjTwo = {
   topLine: 'sit amet',
   headline: 'VAPT Services',
   description:'',
-  descriptionArr:["Application Security","Network Security","Database Security","Host Security"],
+  descriptionArr:["Application Security Services","Network Security Services","Database Security Services","Host Security Services"],
   buttonLabel: 'See More',
   imgStart: '',
   img: image2,

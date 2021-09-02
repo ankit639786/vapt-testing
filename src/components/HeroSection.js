@@ -32,9 +32,9 @@ function HeroSection({
                   {description}
                 </p>
                 {
-                  descriptionArr?.map((ele,i) =>
+                  descriptionArr?.map(ele =>
                     <p className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
-                      {`${i+1}. ${ele}`}
+                      {ele}
                     </p>
                   )
                 }
