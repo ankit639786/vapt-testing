@@ -40,9 +40,9 @@ export const homeObjThree = {
 };
 
 export const homeObjFour = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: 'VAPT Services',
   headline: 'VAPT Security Audit Services',
   description:"VAPT Service is the combination of two different Security Services one is Vulnerability Assessment (VA) & Penetration Testing (PT).",
