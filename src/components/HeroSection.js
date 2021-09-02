@@ -14,6 +14,7 @@ function HeroSection({
   img,
   alt,
   imgStart,
+  redirectPage,
   descriptionArr
 }) {
   console.log("gobind", description);
@@ -24,38 +25,25 @@ function HeroSection({
           <div className='row home__hero-row' style={{ display: 'flex', flexDirection: imgStart === 'start' ? 'row-reverse' : 'row' }}>
             <div className='col'>
               <div className='home__hero-text-wrapper'>
-                <div className='top-line'>{topLine}</div>
+                {topLine&&<div className='top-line'>{topLine}</div>}
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
                 </h1>
-                <p
-                    className={
-                      lightTextDesc
-                        ? 'home__hero-subtitle'
-                        : 'home__hero-subtitle dark'
-                    }
-                  >
-                    {description&&description}
-                  </p>
-                {descriptionArr?.map((e,i) =>
-                  <p
-                    className={
-                      lightTextDesc
-                        ? 'home__hero-subtitle'
-                        : 'home__hero-subtitle dark'
-                    }
-                  >
-                    {`${i+1}. ${e}`}
-                  </p>
-                )
-                
+                <p className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
+                  {description}
+                </p>
+                {
+                  descriptionArr?.map((ele,i) =>
+                    <p className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
+                      {`${i+1}. ${ele}`}
+                    </p>
+                  )
                 }
-
-                <Link to='#'>
+                {buttonLabel&&<Link to={redirectPage}>
                   <Button buttonSize='btn--wide' buttonColor='blue'>
                     {buttonLabel}
                   </Button>
-                </Link>
+                </Link>}
               </div>
             </div>
             <div className='col'>

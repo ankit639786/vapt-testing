@@ -8,11 +8,11 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Lorem ipsum',
-  headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+  topLine: 'Lorem',
+  headline: 'Vulnerability Assessment & Penetration Testing (VAPT)',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  buttonLabel: 'Lorem ipsum',
+    'Secure your Web Application from the Cyber Attacks',
+  buttonLabel: '',
   imgStart: '',
   img: image1,
   alt: 'Credit Card'
@@ -23,27 +23,29 @@ export const homeObjTwo = {
   lightText: true,
   lightTextDesc: true,
   topLine: 'sit amet',
-  headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  buttonLabel: 'consectetur',
+  headline: 'VAPT Services',
+  description:'',
+  descriptionArr:["Application Security","Network Security","Database Security","Host Security"],
+  buttonLabel: 'See More',
   imgStart: '',
   img: image2,
-  alt: 'Vault'
+  alt: 'Vault',
+  redirectPage:"/services"
 };
 
 export const homeObjThree = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'Lorem ipsum',
-  headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
+  topLine: 'lorem',
+  headline: 'VAPT',
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-  buttonLabel: 'Lorem ipsum',
+  "A vulnerability assessment is a systematic review of security weaknesses in an information system. It evaluates if the system is susceptible to any known vulnerabilities, assigns severity levels to those vulnerabilities, and recommends remediation or mitigation, if and whenever needed.",
+  buttonLabel: 'See More',
   imgStart: 'start',
   img: 'images/svg-7.svg',
-  alt: 'Vault'
+  alt: 'Vault',
+  redirectPage:"/vapt"
 };
 
 export const homeObjFour = {
@@ -53,8 +55,8 @@ export const homeObjFour = {
   topLine: 'dolor sit amet',
   headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  buttonLabel: 'Lorem elit',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
+  buttonLabel: 'See More',
   imgStart: '',
   img: image3,
   alt: 'Vault'
@@ -65,13 +67,14 @@ export const homeObjFive = {
   lightText: false,
   lightTextDesc: false,
   topLine: 'dolor sit amet',
-  headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
+  headline: 'About Us',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  buttonLabel: 'Lorem elit',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
+  buttonLabel: 'See More',
   imgStart: 'start',
   img: image4,
-  alt: 'Vault'
+  alt: 'Vault',
+  redirectPage:"/aboutus"
 };
 
 export const homeObjSix = {
@@ -82,7 +85,7 @@ export const homeObjSix = {
   headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  buttonLabel: 'Lorem elit',
+  buttonLabel: 'See More',
   imgStart: 'start',
   img: image5,
   alt: 'Vault'

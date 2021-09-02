@@ -35,7 +35,7 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <nav className='navbar'>
           <div className='navbar-container container'>
-            <Link to='/vapt' className='navbar-logo' onClick={closeMobileMenu}>
+            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
               <MdFingerprint className='navbar-icon' />
               VAPT
             </Link>

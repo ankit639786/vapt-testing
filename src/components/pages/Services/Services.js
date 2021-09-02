@@ -1,8 +1,8 @@
 import React from 'react';
 import HeroSection from '../../HeroSection';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
-import Pricing from '../../Pricing';
-import Card from './Card'
+// import Pricing from '../../Pricing';
+// import Card from './Card'
 
 function Services() {
   return (
@@ -11,7 +11,7 @@ function Services() {
       <HeroSection {...homeObjThree} />
       {/* <Pricing /> */}
       <HeroSection {...homeObjFour} />
-      <Card />
+      {/* <Card /> */}
     </>
   );
 }
