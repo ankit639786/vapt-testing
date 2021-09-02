@@ -6,10 +6,11 @@ import Carousel from 'react-elastic-carousel';
 import Item from '../Item';
 import "./Products.css";
 import img from "../../assests/images/service22.jpg";
-import {Grid,Paper} from '@material-ui/core'
+import {Grid,Paper} from '@material-ui/core';
+
 
 const breakPoints=[
-  {width:1,itemssToShow:1},
+  {width:1,itemsToShow:1},
   {width:550,itemsToShow:2},
   {width:768,itemsToShow:3},
   {width:1200,itemsToShow:4}
@@ -25,7 +26,7 @@ function Products() {
       <HeroSection {...homeObjThree} />
       {/* <Pricing/> */}
 
-      <Carousel breakPoints={breakPoints} swipeable={true} className="hi">
+      {/* <Carousel breakPoints={breakPoints} swipeable={true} className="hi">
         <Item><img src={img} style={{borderRadius:"5px"}}/></Item>
         <Item><img src={img} style={{borderRadius:"5px"}}/></Item>
 
@@ -36,7 +37,7 @@ function Products() {
         <Item><img src={img} style={{borderRadius:"5px"}}/></Item>
 
         <Item><img src={img} style={{borderRadius:"5px"}}/></Item>
-        <Item><img src={img} style={{borderRadius:"5px"}}/></Item>
+        <Item><img src={img} style={{borderRadius:"5px"}}/></Item> */}
         
 
 
@@ -44,7 +45,11 @@ function Products() {
 
        
         {/* <Item>One</Item> */}
-        </Carousel>
+        {/* </Carousel> */}
+
+         {/* <Pricing/> */}
+
+         
 
      
 

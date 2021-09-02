@@ -76,7 +76,7 @@ function Footer() {
               VAPT
             </Link>
           </div>
-          <small className='website-rights'>@sb2021</small>
+          <small className='website-rights'>@VAPT2021</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
