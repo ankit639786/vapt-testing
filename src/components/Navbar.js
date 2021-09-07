@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-scroll';
+
 import './Navbar.css';
 import { MdFingerprint } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
+import Menu from './Menu'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -21,21 +23,49 @@ function Navbar() {
     }
   };
 
+  const obj = [
+    {
+      menu:"Vapt",
+      ids:"vapt",
+      sub_menu:[
+        {ids:"vapt",subMenu:"VAPT"},
+        {ids:"vapt_assessment",subMenu:"Why do Vulnerability Assessment"},
+        {ids:"vapt_process",subMenu:"Vulnerability Assessment Process"},
+        {ids:"vapt_tools",subMenu:"Tools for Vulnerability Scanning"},
+        {ids:"vapt_types",subMenu:"Types of a vulnerability scanner"}
+      ]
+    },
+    {
+      menu:"Services",
+      ids:"service",
+      sub_menu:[
+        {ids:"list1",subMenu:"list1"},
+        {ids:"list2",subMenu:"list2"},
+        {ids:"list3",subMenu:"list3"},
+        {ids:"list4",subMenu:"list4"}
+      ]
+    },
+    {
+      menu:"About Us",
+      ids:"about",
+      sub_menu:[
+        {ids:"about",subMenu:"About Us"},
+        {ids:"why_us",subMenu:"Why Choose Us"},
+      ]
+    }
+  ]
+
   useEffect(() => {
     showButton();
     window.addEventListener('resize', showButton);
-    return {
-      // window.removeEventListener('resize', showButton)
-    }
   }, []);
-
 
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <nav className='navbar'>
           <div className='navbar-container container'>
-            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            <Link to="vapt" spy={true} smooth={true} className='navbar-logo' onClick={closeMobileMenu}>
               <MdFingerprint className='navbar-icon' />
               VAPT
             </Link>
@@ -43,41 +73,23 @@ function Navbar() {
               {click ? <FaTimes /> : <FaBars />}
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-              <li className='nav-item'>
-                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                  Home
-                </Link>
-              </li>
-              <li className='nav-item'>
-                <Link
-                  to='/services'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                >
-                  Services
-                </Link>
-              </li>
-              <li className='nav-item'>
-                <Link
-                  to='/aboutus'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                >
-                  About Us
-                </Link>
-              </li>
+              {
+                obj.map(item=>
+                  <li className='nav-item' style={{cursor:"pointer"}}>
+                    <Link to="#" className='nav-links' onClick={closeMobileMenu}>
+                      <Menu  navMenu={item}/>
+                    </Link>
+                </li>
+                )
+              }              
               <li className='nav-btn'>
                 {button ? (
-                  <Link to='/contactus' className='btn-link'>
+                  <Link to="contact" spy={true} smooth={true} className='btn-link'>
                     <Button buttonStyle='btn--outline'>Contact Us</Button>
                   </Link>
                 ) : (
-                  <Link to='/contactus' className='btn-link'>
-                    <Button
-                      buttonStyle='btn--outline'
-                      buttonSize='btn--mobile'
-                      onClick={closeMobileMenu}
-                    >
+                  <Link to="contact" spy={true} smooth={true} className='btn-link'>
+                    <Button buttonStyle='btn--outline' buttonSize='btn--mobile' onClick={closeMobileMenu} >
                       Contact Us
                     </Button>
                   </Link>

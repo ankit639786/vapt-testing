@@ -8,12 +8,10 @@ function Vapt() {
   return (
     <>
       <HeroSection {...homeObjOne} />
-      
       <HeroSection {...homeObjThree} />
       {/* <Pricing /> */}
       <HeroSection {...homeObjFour} />
       <HeroSection {...homeObjTwo} />
-      
     </>
   );
 }
