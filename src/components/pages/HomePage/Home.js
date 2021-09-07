@@ -13,12 +13,12 @@ import About from '../Products/Products'
 
 
 
-const breakPoints=[
-  {width:1,itemsToShow:1},
-  {width:550,itemsToShow:2},
-  {width:768,itemsToShow:3},
-  {width:1200,itemsToShow:4}
-]
+// const breakPoints=[
+//   {width:1,itemsToShow:1},
+//   {width:550,itemsToShow:2},
+//   {width:768,itemsToShow:3},
+//   {width:1200,itemsToShow:4}
+// ]
 
 function Home() {
   return (
@@ -29,8 +29,8 @@ function Home() {
       <Vapt/>
       <Cards/>
       <About />
+      <Contact />
       {/* <HeroSection {...homeObjFive} /> */}
-      {/* <Contact /> */}
       {/* <HeroSection {...homeObjFour} /> */}
       {/* <HeroSection {...homeObjFive} /> */}
       
