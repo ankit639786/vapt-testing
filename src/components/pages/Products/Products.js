@@ -20,10 +20,10 @@ function Products() {
   return (
     <>
      
-      <HeroSection {...homeObjTwo} />
-      <HeroSection {...homeObjOne} />
-      {/* <Pricing/> */}
       <HeroSection {...homeObjThree} />
+      <HeroSection {...homeObjTwo} />
+      {/* <HeroSection {...homeObjOne} /> */}
+      {/* <Pricing/> */}
       {/* <Pricing/> */}
 
       {/* <Carousel breakPoints={breakPoints} swipeable={true} className="hi">

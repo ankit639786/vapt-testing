@@ -18,46 +18,46 @@ import { Link } from 'react-router-dom';
 function Card() {
   return (
     <IconContext.Provider value={{ color: '#fff', size: 64 }}>
-      <div className="pricing__section" style={{padding:"10px 0"}}>
+      <div id="service" className="pricing__section">
         <div className='pricing__wrapper'>
-          <Grid item lg={12} container style={{ textAlign: "center", marginTop: "20px", marginBottom: "20px", textShadow: "2px 2px #f00946", color: "white", fontSize: "14px" }}>
-            <h1 style={{ textAlign: "center", width: "100%" }}>We offer a wide range of services</h1>
+          <Grid item lg={12} container style={{ textAlign: "center", marginTop: "10px", marginBottom: "10px", color: "white", fontSize: "20px" }}>
+            <h1 style={{ textAlign: "center", width: "100%", margin:"50px" }}>Our Services</h1>
           </Grid>
           <Grid item lg={12} container style={{ margin: "auto", textAlign: "center" }} >
             <Grid item lg={4} >
               <img style={{ width: "90%", marginBottom: "20px" }} src={service22} alt="" />
-              <h1 style={{ color: "white", textShadow: "2px 2px #f00946" }}>Network</h1>
-              <h2 style={{ color: "white", textShadow: "2px 2px #f00946" }}> Security Audit</h2>
+              <h1 style={{ color: "white" }}>Network</h1>
+              <h2 style={{ color: "white" }}> Security Audit</h2>
             </Grid>
             <Grid item lg={4} >
               <img style={{ width: "90%", marginBottom: "20px" }} src={service33} alt="" />
-              <h1 style={{ color: "white", textShadow: "2px 2px #f00946" }}>Web Application</h1>
-              <h2 style={{ color: "white", textShadow: "2px 2px #f00946" }}> Penetration Testing</h2>
+              <h1 style={{ color: "white" }}>Web Application</h1>
+              <h2 style={{ color: "white" }}> Penetration Testing</h2>
             </Grid>
             <Grid item lg={4}  >
               <img style={{ width: "90%", marginBottom: "20px" }} src={service44} alt="" />
-              <h1 style={{ color: "white", textShadow: "2px 2px #f00946" }}>Mobile</h1>
-              <h2 style={{ color: "white", textShadow: "2px 2px #f00946" }}> Penetration Testing</h2>
+              <h1 style={{ color: "white" }}>Mobile</h1>
+              <h2 style={{ color: "white" }}> Penetration Testing</h2>
             </Grid>
             {/* <Grid item lg={1}>
             </Grid> */}
           </Grid>
-          <Grid item lg={12} container style={{ marginTop: "40px",textAlign: "center" }} >
+          <Grid item lg={12} container style={{ marginTop: "100px",textAlign: "center" }} >
 
             <Grid item lg={4}  >
               <img style={{ width: "90%", marginBottom: "20px" }} src={service55} alt="" />
-              <h1 style={{ color: "white", textShadow: "2px 2px #f00946" }}>Wireless</h1>
-              <h2 style={{ color: "white", textShadow: "2px 2px #f00946", marginBottom: "40px" }}> Security Assessmen9</h2>
+              <h1 style={{ color: "white" }}>Wireless</h1>
+              <h2 style={{ color: "white", marginBottom: "40px" }}> Security Assessmen9</h2>
             </Grid>
             <Grid item lg={4} >
               <img style={{ width: "90%", marginBottom: "20px" }} src={service77} alt="" />
-              <h1 style={{ color: "white", textShadow: "2px 2px #f00946" }}>Cloud</h1>
-              <h2 style={{ color: "white", textShadow: "2px 2px #f00946", marginBottom: "40px" }}> Security Assessmen9</h2>
+              <h1 style={{ color: "white" }}>Cloud</h1>
+              <h2 style={{ color: "white", marginBottom: "40px" }}> Security Assessmen9</h2>
             </Grid>
             <Grid item lg={4}  >
               <img style={{ width: "90%", marginBottom: "20px" }} src={service88} alt="" />
-              <h1 style={{ color: "white", textShadow: "2px 2px #f00946" }}>Social </h1>
-              <h2 style={{ color: "white", textShadow: "2px 2px #f00946", marginBottom: "40px" }}> Assessment</h2>
+              <h1 style={{ color: "white" }}>Social </h1>
+              <h2 style={{ color: "white", marginBottom: "40px" }}> Assessment</h2>
             </Grid>
             {/* <Grid item lg={1}>
             </Grid> */}

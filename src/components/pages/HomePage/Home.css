@@ -4,8 +4,11 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color:white;
+    background-color:#09091e;
     margin-top: -150px;
+}
+h1{
+    color:#fff;
 }
 
 .hi img:hover {

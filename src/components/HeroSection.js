@@ -17,10 +17,9 @@ function HeroSection({
   redirectPage,
   descriptionArr
 }) {
-  console.log("gobind", description);
   return (
     <>
-      <div className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'} >
+      <div id={redirectPage&&redirectPage} className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'} >
         <div className='container'>
           <div className='row home__hero-row' style={{ display: 'flex', flexDirection: imgStart === 'start' ? 'row-reverse' : 'row' }}>
             <div className='col'>
@@ -39,7 +38,7 @@ function HeroSection({
                     </p>
                   )
                 }
-                {buttonLabel&&<Link to={redirectPage}>
+                {buttonLabel&&<Link to="#">
                   <Button buttonSize='btn--wide' buttonColor='blue'>
                     {buttonLabel}
                   </Button>

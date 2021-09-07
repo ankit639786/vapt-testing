@@ -1,6 +1,13 @@
 .home__hero-section {
   color: #fff;
-  padding: 10px 0;
+  padding: 50px 0;
+  /* background-image: linear-gradient(to right, #020234 ,#04041b, #09091e); */
+  /* background-image: url("./assests/images/parallax-bg-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+
 }
 
 .home__hero-row {
@@ -54,7 +61,10 @@
 }
 
 .darkBg {
-  background-color: #09091e;
+  /* background-color: #09091e; */
+  background-image: linear-gradient(to right, #020234 ,#04041b, #09091e);
+  /* background-image: url("./assests/images/back.jpg");
+  background-attachment: fixed; */
 }
 
 .home__hero-subtitle {

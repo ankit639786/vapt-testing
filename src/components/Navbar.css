@@ -1,5 +1,9 @@
 .navbar {
   background: #09091e;
+  /* background: linear-gradient(to right, #020230,#09091e00),url("./assests/images/cyber-scurity3.jpg"); */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   height: 80px;
   display: flex;
   justify-content: center;

@@ -1,92 +1,92 @@
 import image1 from "../../assests/images/banner.png"
 import image2 from "../../assests/images/banner2.png"
 import image3 from "../../assests/images/graph.png"
-import image4 from "../../assests/images/lockss.png"
 import image5 from "../../assests/images/locks.jpg"
 
 export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Lorem',
+  topLine: '',
   headline: 'Vulnerability Assessment & Penetration Testing (VAPT)',
   description:
     'Secure your Web Application from the Cyber Attacks',
   buttonLabel: '',
   imgStart: '',
   img: image1,
-  alt: 'Credit Card'
+  alt: 'Credit Card',
+  redirectPage:''
 };
 
-export const homeObjTwo = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: 'sit amet',
-  headline: 'VAPT Services',
-  description:'',
-  descriptionArr:["Application Security Services","Network Security Services","Database Security Services","Host Security Services"],
-  buttonLabel: 'See More',
-  imgStart: '',
-  img: image2,
-  alt: 'Vault',
-  redirectPage:"/services"
-};
+// export const homeObjTwo = {
+//   lightBg: false,
+//   lightText: true,
+//   lightTextDesc: true,
+//   topLine: '',
+//   headline: 'VAPT Services',
+//   description:'',
+//   descriptionArr:["Application Security Services","Network Security Services","Database Security Services","Host Security Services"],
+//   buttonLabel: '',
+//   imgStart: '',
+//   img: image2,
+//   alt: 'Vault',
+//   redirectPage:"service"
+// };
 
 export const homeObjThree = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'lorem',
+  topLine: '',
   headline: 'VAPT',
   description:
   "A vulnerability assessment is a systematic review of security weaknesses in an information system. It evaluates if the system is susceptible to any known vulnerabilities, assigns severity levels to those vulnerabilities, and recommends remediation or mitigation, if and whenever needed.",
-  buttonLabel: 'See More',
+  buttonLabel: '',
   imgStart: 'start',
   img: 'images/svg-7.svg',
   alt: 'Vault',
-  redirectPage:"/vapt"
+  redirectPage:"vapt"
 };
 
-export const homeObjFour = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: 'dolor sit amet',
-  headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  description:
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  buttonLabel: 'See More',
-  imgStart: '',
-  img: image3,
-  alt: 'Vault'
-};
+// export const homeObjFour = {
+//   lightBg: false,
+//   lightText: true,
+//   lightTextDesc: true,
+//   topLine: '',
+//   headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
+//   description:
+//   'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
+//   buttonLabel: '',
+//   imgStart: '',
+//   img: image3,
+//   alt: 'Vault'
+// };
 
 export const homeObjFive = {
   lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: 'dolor sit amet',
+  lightText: true,
+  lightTextDesc: true,
+  topLine: '',
   headline: 'About Us',
   description:
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  buttonLabel: 'See More',
+  buttonLabel: '',
   imgStart: 'start',
-  img: image4,
+  img: "images/svg-4.svg",
   alt: 'Vault',
-  redirectPage:"/aboutus"
+  redirectPage:"about"
 };
 
-export const homeObjSix = {
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: 'dolor sit amet',
-  headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  buttonLabel: 'See More',
-  imgStart: 'start',
-  img: image5,
-  alt: 'Vault'
-};
+// export const homeObjSix = {
+//   lightBg: false,
+//   lightText: true,
+//   lightTextDesc: true,
+//   topLine: '',
+//   headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
+//   description:
+//     'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
+//   buttonLabel: '',
+//   imgStart: 'start',
+//   img: image5,
+//   alt: 'Vault'
+// };

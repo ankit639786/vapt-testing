@@ -8,6 +8,9 @@ import Carousel from 'react-elastic-carousel';
 import Item from '../Item';
 import img from "../../assests/images/service22.jpg";
 import './Home.css';
+import Vapt from '../vapt/Vapt';
+import About from '../Products/Products'
+
 
 
 const breakPoints=[
@@ -22,14 +25,16 @@ function Home() {
     <>
       <HeroSection {...homeObjOne} />
       <HeroSection {...homeObjThree} />
-      <HeroSection {...homeObjTwo} />
-      <HeroSection {...homeObjFive} />
+      {/* <HeroSection {...homeObjTwo} /> */}
+      <Vapt/>
       <Cards/>
+      <About />
+      {/* <HeroSection {...homeObjFive} /> */}
       {/* <Contact /> */}
       {/* <HeroSection {...homeObjFour} /> */}
       {/* <HeroSection {...homeObjFive} /> */}
       
-      <h1 style={{textAlign:'center',fontSize:"45px", marginTop:"5rem"}}>Testing Services</h1>
+      {/* <h1 style={{textAlign:'center',fontSize:"45px", marginTop:"5rem"}}>Testing Services</h1>
 
       <Carousel breakPoints={breakPoints} swipeable={true} className="hi">
         <Item><img src={img} style={{borderRadius:"5px"}}/></Item>
@@ -43,7 +48,7 @@ function Home() {
 
         <Item><img src={img} style={{borderRadius:"5px"}}/></Item>
         <Item><img src={img} style={{borderRadius:"5px"}}/></Item>
-        </Carousel>
+        </Carousel> */}
     </>
   );
 }
