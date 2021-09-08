@@ -49,7 +49,11 @@ function Navbar() {
         {ids:"about",subMenu:"About Us"},
         {ids:"why_us",subMenu:"Why Choose Us"},
       ]
-    }
+    },
+    {
+      menu:"FAQs",
+      ids:"faq",
+    },
   ]
 
   useEffect(() => {

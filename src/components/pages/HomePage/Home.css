@@ -15,3 +15,12 @@ h1{
    transform: scale(1.5);
    border-radius: 10px;
   }
+
+.faq__section{
+    margin:0px;
+    padding-bottom:50px; 
+    background: linear-gradient(to right, rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url("../../assests/images/back.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
