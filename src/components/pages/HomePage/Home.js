@@ -8,13 +8,9 @@ import Carousel from 'react-elastic-carousel';
 import Item from '../Item';
 import img from "../../assests/images/service22.jpg";
 import './Home.css';
-<<<<<<< HEAD
-//import Faq from "../../Faq";
-=======
 import Vapt from '../vapt/Vapt';
 import About from '../Products/Products';
 import Faq from '../Faq/Faq'
->>>>>>> 920aea27d14d367bcd6a7fdb06b77ab04cd6a9ea
 
 
 
@@ -32,16 +28,9 @@ function Home() {
       <HeroSection {...homeObjThree} />
       <Vapt/>
       <Cards/>
-<<<<<<< HEAD
-     
-      {/* <Contact /> */}
-      {/* <HeroSection {...homeObjFour} /> */}
-      {/* <HeroSection {...homeObjFive} /> */}
-=======
       <About />
       <Contact />
       <Faq />
->>>>>>> 920aea27d14d367bcd6a7fdb06b77ab04cd6a9ea
       
       {/* <h1 style={{textAlign:'center',fontSize:"45px", marginTop:"5rem"}}>Testing Services</h1>
 
@@ -57,13 +46,7 @@ function Home() {
 
         <Item><img src={img} style={{borderRadius:"5px"}}/></Item>
         <Item><img src={img} style={{borderRadius:"5px"}}/></Item>
-<<<<<<< HEAD
-        </Carousel>
-
-       
-=======
         </Carousel> */}
->>>>>>> 920aea27d14d367bcd6a7fdb06b77ab04cd6a9ea
     </>
   );
 }
