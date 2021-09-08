@@ -48,7 +48,7 @@ const Contact = () => {
 
     return (
         <>
-            <div className={homeObjFour?.lightBg ? 'home__hero-section' : 'home__hero-section darkBg'} >
+            <div id="contact" className={homeObjFour?.lightBg ? 'home__hero-section' : 'home__hero-section darkBg'} >
                 <div className='container' style={{paddingTop:"3rem"}}>
                     <div className='row home__hero-row' style={{ display: 'flex', flexDirection: homeObjFour?.imgStart === 'start' ? 'row-reverse' : 'row' }}>
                         <div className='col'>

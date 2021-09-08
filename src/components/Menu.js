@@ -10,14 +10,8 @@ const StyledMenu = withStyles({paper: {border: '1px solid #d3d4d5'}})((props) =>
   <Menu
     elevation={0}
     getContentAnchorEl={null}
-    anchorOrigin={{
-      vertical: 'bottom',
-      horizontal: 'center',
-    }}
-    transformOrigin={{
-      vertical: 'top',
-      horizontal: 'center',
-    }}
+    anchorOrigin={{ vertical: 'bottom', horizontal: 'center', }}
+    transformOrigin={{ vertical: 'top', horizontal: 'center', }}
     {...props}
   />
 ));
@@ -25,13 +19,13 @@ const StyledMenu = withStyles({paper: {border: '1px solid #d3d4d5'}})((props) =>
 const StyledMenuItem = withStyles((theme) => ({
   root: {
     '&:focus': {
-      backgroundColor: "#020234a4",//theme.palette.info.light,
+      backgroundColor: "#020234a4",
       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
         color: theme.palette.common.white,
       },
     },
     '&:hover': {
-      backgroundColor: "#06003da4",//theme.palette.info.light,
+      backgroundColor: "#06003da4",
       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
         color: theme.palette.common.white,
       },
@@ -50,41 +44,23 @@ const Menus = (props) => {
     setAnchorEl(null);
   };
 
-  const navItem = props.navMenu;
-  console.log("vgvvvvv",props);
+  const navItem = props?.navMenu;
 
   return (
     <div>
-      <span
-        aria-controls="customized-menu"
-        aria-haspopup="true"
-        variant="contained"
-        onClick={handleClick}
-      >
-          {navItem.menu}
-        {/* <Avatar src="/broken-image.jpg" /> */}
+      <span aria-controls="customized-menu" aria-haspopup="true" variant="contained" onClick={handleClick} >
+          {navItem?.menu}
       </span>
-      <StyledMenu
-        id="customized-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
+      <StyledMenu id="customized-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose} >
         {
-          navItem.sub_menu.map(list=>
-            <Link to={list.ids} spy={true} smooth={true} style={{ textDecoration: "none", color: "#534e4e" }}>
+          navItem?.sub_menu?.map(list=>
+            <Link to={list?.ids} spy={true} smooth={true} onClick={handleClose} style={{ textDecoration: "none", color: "#534e4e" }}>
               <StyledMenuItem>
                 <ListItemText primary={list.subMenu} />
               </StyledMenuItem>
             </Link>
           )
         }
-        {/* <Link to="#" style={{ textDecoration: "none", color: "#534e4e" }}>
-          <StyledMenuItem >
-            <ListItemText primary={'nav.profile.list2'} />
-          </StyledMenuItem>
-        </Link> */}
       </StyledMenu>
     </div>
   );
