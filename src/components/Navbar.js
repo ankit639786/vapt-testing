@@ -39,10 +39,7 @@ function Navbar() {
       menu:"Services",
       ids:"service",
       sub_menu:[
-        {ids:"list1",subMenu:"list1"},
-        {ids:"list2",subMenu:"list2"},
-        {ids:"list3",subMenu:"list3"},
-        {ids:"list4",subMenu:"list4"}
+        {ids:"service",subMenu:"Service"},
       ]
     },
     {
@@ -74,10 +71,11 @@ function Navbar() {
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               {
-                obj.map(item=>
+                obj?.map(item=>
                   <li className='nav-item' style={{cursor:"pointer"}}>
-                    <Link to="#" className='nav-links' onClick={closeMobileMenu}>
-                      <Menu  navMenu={item}/>
+                    <Link to={item?.ids} spy={true} smooth={true} className='nav-links' onClick={closeMobileMenu}>
+                      {/* <Menu navMenu={item}/> */}
+                      {item?.menu}
                     </Link>
                 </li>
                 )
