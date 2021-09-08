@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroSection from '../../HeroSection';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from './Data';
+import { homeObjOne, homeObjThree } from './Data';
 import Cards from "./Card";
 import Contact from '../Contact/Contact'
 // import Pricing from '../../Pricing';
@@ -9,7 +9,8 @@ import Item from '../Item';
 import img from "../../assests/images/service22.jpg";
 import './Home.css';
 import Vapt from '../vapt/Vapt';
-import About from '../Products/Products'
+import About from '../Products/Products';
+import Faq from '../Faq/Faq'
 
 
 
@@ -25,14 +26,11 @@ function Home() {
     <>
       <HeroSection {...homeObjOne} />
       <HeroSection {...homeObjThree} />
-      {/* <HeroSection {...homeObjTwo} /> */}
       <Vapt/>
       <Cards/>
       <About />
       <Contact />
-      {/* <HeroSection {...homeObjFive} /> */}
-      {/* <HeroSection {...homeObjFour} /> */}
-      {/* <HeroSection {...homeObjFive} /> */}
+      <Faq />
       
       {/* <h1 style={{textAlign:'center',fontSize:"45px", marginTop:"5rem"}}>Testing Services</h1>
 
