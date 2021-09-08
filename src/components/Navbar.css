@@ -1,5 +1,9 @@
 .navbar {
   background: #09091e;
+  /* background: linear-gradient(to right, #020230,#09091e00),url("./assests/images/cyber-scurity3.jpg"); */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -98,6 +102,7 @@
     opacity: 1;
     transition: all 0.6s ease;
     z-index: 1;
+    height: auto;
   }
 
   .nav-links {

@@ -4,11 +4,23 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color:white;
+    background-color:#09091e;
     margin-top: -150px;
+}
+h1{
+    color:#fff;
 }
 
 .hi img:hover {
    transform: scale(1.5);
    border-radius: 10px;
   }
+
+.faq__section{
+    margin:0px;
+    padding-bottom:50px; 
+    background: linear-gradient(to right, rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url("../../assests/images/back.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}

@@ -1,5 +1,8 @@
 .footer-container {
-  background-color:#09091e;
+  /* background-color:#09091e; */
+  /* background-image: url("../../assests/images/cyber-scurity3.jpg"); */
+  background: linear-gradient(#020230,#08081d00),url("../../assests/images/cyber-scurity3.jpg");
+  background-attachment: fixed;
   padding: 1rem 0 2rem 0;
   display: flex;
   flex-direction: column;
