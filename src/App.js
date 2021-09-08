@@ -8,6 +8,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/pages/Footer/Footer';
 import Contact from './components/pages/Contact/Contact';
 import Vapt from "./components/pages/vapt/Vapt";
+// import Faq from "./components/pages/Faq/Faq";
+import Faq from "./components/pages/Faq/Faq";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path='/aboutus' component={Products} />
         <Route path='/contactus' component={Contact} />
         <Route path='/vapt' component={Vapt} />
+        <Route path='/faq' component={Faq} />
+
 
         
       </Switch>
