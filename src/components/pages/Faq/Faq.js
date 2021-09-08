@@ -6,7 +6,8 @@ import Typography from '@material-ui/core/Typography';
 //import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { ExpandMoreOutlined } from "@material-ui/icons";
 import '../HomePage/Home.css';
-import Data from './data'
+import Data from './data';
+import  './Faq.css';
 
 
 const Faq = () => {
@@ -18,10 +19,10 @@ const Faq = () => {
     return (
         <>
             <div className="faq__section" id="faq">
-                <h1 style={{ textAlign: "center", fontSize: '50px', padding: "30px 0 0px 0" }}>Frequently Asked Questions</h1>
+                <h1 className="faq" style={{ textAlign: "center", padding: "30px 0 0px 0" }}>Frequently Asked Questions</h1>
                 {
                     Data?.map(faq =>
-                        <div style={{ margin: 40 }}>
+                        <div style={{ margin: 40,fontSize:"8px" }}>
                             <Accordion expanded={current === faq.id} onChange={changeState(faq.id)}>
                                 <AccordionSummary expandIcon={<ExpandMoreOutlined />}>
                                     {/* <Typography varient="" > */}
