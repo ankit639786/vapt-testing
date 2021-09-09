@@ -68,7 +68,7 @@ function Navbar() {
           <div className='navbar-container container'>
             <Link to="vapt" spy={true} smooth={true} className='navbar-logo' onClick={closeMobileMenu}>
               <MdFingerprint className='navbar-icon' /> 
-              VAPT
+              V@PT
             </Link>
             <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
