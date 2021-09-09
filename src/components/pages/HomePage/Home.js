@@ -9,7 +9,7 @@ import Item from '../Item';
 import img from "../../assests/images/service22.jpg";
 import './Home.css';
 import Vapt from '../vapt/Vapt';
-import About from '../Products/Products';
+import About from '../About/About';
 import Faq from '../Faq/Faq'
 
 

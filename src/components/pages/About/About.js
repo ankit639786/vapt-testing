@@ -4,7 +4,6 @@ import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 import Pricing from '../../Pricing';
 import Carousel from 'react-elastic-carousel';
 import Item from '../Item';
-import "./Products.css";
 import img from "../../assests/images/service22.jpg";
 import {Grid,Paper} from '@material-ui/core';
 
