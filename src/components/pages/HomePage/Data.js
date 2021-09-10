@@ -10,7 +10,7 @@ export const homeObjOne = {
   topLine: '',
   headline: 'Vulnerability Assessment & Penetration Testing (VAPT)',
   description:
-    'Secure your Web Application from the Cyber Attacks',
+    'Secure your Web Application from the Cyber Attacks.',
   buttonLabel: '',
   imgStart: '',
   img: image1,
