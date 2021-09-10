@@ -24,12 +24,12 @@ const Faq = () => {
 
                 {
                     Data?.map(faq =>
-                        <div style={{width:"50%", marginLeft: 40, marginRight: 40,marginTop: 5,marginBottom: 5,fontSize:"8px" }}>
+                        <div id="accordion">
                             <Accordion expanded={current === faq.id} onChange={changeState(faq.id)}>
                                 <AccordionSummary expandIcon={<ExpandMoreOutlined />}>
                                     <Typography varient="p" >
                                         <h4 style={{ color: "black" }}> {faq.title}</h4>
-                                    </Typography>/
+                                    </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography varient="p">
