@@ -1,19 +1,13 @@
 import React from 'react';
-// import { Button } from './Button';
-// import './Pricing.css';
-import { FaFire } from 'react-icons/fa';
-import { BsXDiamondFill } from 'react-icons/bs';
-import { GiCrystalize } from 'react-icons/gi';
-import { Grid, Paper } from "@material-ui/core";
-import service22 from "../../assests/images/service22.jpg";
-import service33 from "../../assests/images/service33.jpg";
-import service44 from "../../assests/images/service44.jpg";
-import service55 from "../../assests/images/service55.jpg";
-import service77 from "../../assests/images/service77.jpg";
-import service88 from "../../assests/images/service88.jpg";
-
+import '../common/Pricing/Pricing.css'
+import { Grid } from "@material-ui/core";
+import service22 from "../assests/images/service22.jpg";
+import service33 from "../assests/images/service33.jpg";
+import service44 from "../assests/images/service44.jpg";
+import service55 from "../assests/images/service55.jpg";
+import service77 from "../assests/images/service77.jpg";
+import service88 from "../assests/images/service88.jpg";
 import { IconContext } from 'react-icons/lib';
-import { Link } from 'react-router-dom';
 
 function Card() {
   return (
@@ -39,8 +33,6 @@ function Card() {
               <h1 style={{ color: "white" }}>Mobile</h1>
               <h2 style={{ color: "white", marginBottom: "40px" }}> Penetration Testing</h2>
             </Grid>
-            {/* <Grid item lg={1}>
-            </Grid> */}
           </Grid>
           <Grid item lg={12} container style={{ marginTop: "40px",textAlign: "center" }} >
 
@@ -59,8 +51,6 @@ function Card() {
               <h1 style={{ color: "white" }}>Social </h1>
               <h2 style={{ color: "white", marginBottom: "40px" }}> Assessment</h2>
             </Grid>
-            {/* <Grid item lg={1}>
-            </Grid> */}
           </Grid>
         </div>
       </div>

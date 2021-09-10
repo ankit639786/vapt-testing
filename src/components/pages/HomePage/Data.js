@@ -1,7 +1,4 @@
 import image1 from "../../assests/images/banner.png"
-import image2 from "../../assests/images/banner2.png"
-import image3 from "../../assests/images/graph.png"
-import image5 from "../../assests/images/locks.jpg"
 
 export const homeObjOne = {
   lightBg: false,
@@ -18,21 +15,6 @@ export const homeObjOne = {
   redirectPage:''
 };
 
-// export const homeObjTwo = {
-//   lightBg: false,
-//   lightText: true,
-//   lightTextDesc: true,
-//   topLine: '',
-//   headline: 'VAPT Services',
-//   description:'',
-//   descriptionArr:["Application Security Services","Network Security Services","Database Security Services","Host Security Services"],
-//   buttonLabel: '',
-//   imgStart: '',
-//   img: image2,
-//   alt: 'Vault',
-//   redirectPage:"service"
-// };
-
 export const homeObjThree = {
   lightBg: true,
   lightText: false,
@@ -48,20 +30,6 @@ export const homeObjThree = {
   redirectPage:"vapt"
 };
 
-// export const homeObjFour = {
-//   lightBg: false,
-//   lightText: true,
-//   lightTextDesc: true,
-//   topLine: '',
-//   headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-//   description:
-//   'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-//   buttonLabel: '',
-//   imgStart: '',
-//   img: image3,
-//   alt: 'Vault'
-// };
-
 export const homeObjFive = {
   lightBg: true,
   lightText: true,
@@ -76,17 +44,3 @@ export const homeObjFive = {
   alt: 'Vault',
   redirectPage:"about"
 };
-
-// export const homeObjSix = {
-//   lightBg: false,
-//   lightText: true,
-//   lightTextDesc: true,
-//   topLine: '',
-//   headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-//   description:
-//     'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-//   buttonLabel: '',
-//   imgStart: 'start',
-//   img: image5,
-//   alt: 'Vault'
-// };

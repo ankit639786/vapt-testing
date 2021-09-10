@@ -1,6 +1,5 @@
-import React,{useRef} from 'react';
+import React from 'react';
 import './Contact.css';
-import { scroller } from "react-scroll";
 
 const Contact = () => {
 
@@ -33,8 +32,6 @@ const Contact = () => {
                                 </p>
                             </div>
                         </div>
-
-                       
                         <div className='col'>
                             <div className='home__hero-img-wrapper'>
                                 <form className="myForm" style={{marginTop:"-50px",backgroundColor:"#09091e"}}>
