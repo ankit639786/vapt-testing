@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroSection from '../../common/HeroSection/HeroSection';
-import { homeObjOne, homeObjThree } from './Data';
+import { homeObjOne } from './Data';
 import Cards from "../../common/Card";
 import Contact from '../Contact/Contact';
 import './Home.css';
@@ -12,7 +12,6 @@ function Home() {
   return (
     <>
       <HeroSection {...homeObjOne} />
-      <HeroSection {...homeObjThree} />
       <Vapt/>
       <Cards/>
       <About />

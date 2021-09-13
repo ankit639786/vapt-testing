@@ -15,7 +15,8 @@ function HeroSection({
   alt,
   imgStart,
   redirectPage,
-  descriptionArr
+  descriptionArr,
+  bulletPoints
 }) {
   return (
     <>
@@ -42,6 +43,15 @@ function HeroSection({
                     </p>
                   )
                 }
+                <ul>
+                {
+                  bulletPoints?.map(ele =>
+                    <li className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
+                      {ele}
+                    </li>
+                  )
+                }
+                </ul>
                 {buttonLabel&&<Link to="#">
                   <Button buttonSize='btn--wide' buttonColor='blue'>
                     {buttonLabel}
