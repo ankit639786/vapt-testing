@@ -28,7 +28,7 @@ function Card(props) {
             <Grid   item lg={12} container  spacing={3}>
               {
                 Data?.map(ele=>
-                  <Grid data-aos="flip-up" item lg={4} md={4} sm={4} xs={12} className="card_outer" >
+                  <Grid data-aos="flip-right" item lg={4} md={4} sm={4} xs={12} className="card_outer" >
                     <Cards   data={ele}/>
                 </Grid>
                 )
