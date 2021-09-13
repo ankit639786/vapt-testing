@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+.our_service_header{
+        text-align: center;
+        margin-top: 10px; 
+        margin-bottom: 10px; 
+        color: white; 
+        font-size: 20px;
+}
+
+.our_service_header h1{
+    text-align: center ;
+    width: 100%;
+    margin:50px;
+}
+.our_service_header p{
+    text-align: center ;
+    width: 100%;
+    margin-bottom:50px;
+    font-family:  'Courgette', cursive;
+}
+
+.card_outer{
+    margin-bottom: 40px !important;
+    display: grid;
+    place-items: center;
+}
+
+#card:hover{
+    box-shadow: 0px 0px 11px rgb(99, 98, 98);
+}

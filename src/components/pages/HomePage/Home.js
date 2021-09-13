@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroSection from '../../common/HeroSection/HeroSection';
 import { homeObjOne } from './Data';
-import Cards from "../../common/Card";
+import Cards from "../../common/Card/Card";
 import Contact from '../Contact/Contact';
 import './Home.css';
 import Vapt from '../vapt/Vapt';
