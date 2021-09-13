@@ -24,10 +24,14 @@ function Card(props) {
                 Data?.map(ele=>
                   <Grid item lg={4} md={4} sm={4} xs={12} className="card_outer" >
                     <Cards data={ele}/>
+                    
                 </Grid>
+                
                 )
               }
+              
             </Grid>
+            
           </div>
         </div>
       </div>

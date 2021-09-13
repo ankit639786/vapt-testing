@@ -11,13 +11,18 @@ import '../../pages/Services/Services.css';
 const useStyles = makeStyles({
   root: {
     maxWidth: 350,
-    borderRadius:10
+    borderRadius:10,
+    // backgroundColor:"red"
+   
   },
   media: {
-    height: 200,
+    height: 500,
+    // backgroundColor:"red"
   },
   content:{
-    height:150
+    height:200,
+    width:250,
+    
   }
 });
 
@@ -29,7 +34,7 @@ console.log(props.data);
     
     <Card className={classes.root} id="card">
       <CardActionArea>
-        <CardMedia className={classes.media} image={image} title="Contemplative Reptile" />
+        {/* <CardMedia className={classes.media} image={image} title="Contemplative Reptile" /> */}
         <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h2">
             {name}
