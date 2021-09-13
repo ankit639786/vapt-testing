@@ -1,15 +1,13 @@
 import React from 'react';
-import HeroSection from '../../HeroSection';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
-//import Pricing from '../../Pricing';
-//import Card from './Card'
+import HeroSection from '../../common/HeroSection/HeroSection';
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from './Data';
 
 function Vapt() {
   return (
     <>
+      <HeroSection {...homeObjFive} />
       <HeroSection {...homeObjOne} />
       <HeroSection {...homeObjThree} />
-      {/* <Pricing /> */}
       <HeroSection {...homeObjFour} />
       <HeroSection {...homeObjTwo} />
     </>

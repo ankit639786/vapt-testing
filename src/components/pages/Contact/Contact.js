@@ -1,28 +1,5 @@
-import React, { useState } from "react";
-import 'antd/dist/antd.css';
-import {
-  Form,
-  Input,
-  InputNumber,
-  Cascader,
-  Select,
-  Row,
-  Card,
-  Col,
-  Checkbox,
-  Button,
-  AutoComplete,
-} from 'antd';
-const { Option } = Select;
-
-const formItemLayout = {
-  labelCol: { xs: { span: 24 }, sm: { span: 12 }, md: { span: 8 }, lg: { span: 8 } },
-  wrapperCol: { xs: { span: 24 }, sm: { span: 12 }, md: { span: 12 }, lg: { span: 12 } }
-}
-const tailFormItemLayout = {
-  wrapperCol: { xs: { span: 24 }, sm: { span: 12, offset: 12 }, md: { span: 12, offset: 8 }, lg: { span: 12, offset: 8 } }
-};
-
+import React from 'react';
+import './Contact.css';
 
 const Contact = () => {
   const [form] = Form.useForm();
@@ -60,6 +37,7 @@ const Contact = () => {
 
 
   return (
+    <>
     <div
       style={{
 
@@ -106,89 +84,59 @@ const Contact = () => {
               </Col>
 
 
-              <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}>
-                <Form.Item
-                  name="email"
+    const homeObjFour = {
+        lightBg: true,
+        lightText: false,
+        lightTextDesc: false,
+        topLine: '',
+        headline: 'Contact Us',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit ametLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet',
+        buttonLabel: 'Lorem ipsum',
+        imgStart: 'start',
+        img: 'images/svg-8.svg',
+        alt: 'Vault'
+    };
 
-                  rules={[
-                    {
-                      type: 'email',
-                      message: 'The input is not valid E-mail!',
-                    },
-                    {
-                      required: true,
-                      message: 'Please input your E-mail!',
-                    },
-                  ]}
-                >
-                  <Input placeholder="Email" size="large" />
-                </Form.Item>
-              </Col>
-            </Row>
-
-
-
-            <Row gutter={16}>
-              <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}>
-
-                <Form.Item
-                  name="phone"
-
-                  rules={[
-                    {
-                      required: true,
-                      message: 'Please input your phone number!',
-                    },
-                  ]}
-                >
-                  <Input
-
-
-                    placeholder="Phone Number" size="large"
-                  />
-                </Form.Item>
-              </Col>
-
-
-
-              <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}>
-                <Form.Item
-
-                  name=" Country"
-                  rules={[
-                    {
-                      required: true,
-                      message: "Please input your Countrt",
-                    },
-                  ]}
-                >
-                  <Input placeholder="Country" size="large" />
-                </Form.Item>
-
-
-              </Col>
-            </Row>
-            <Row>
-              <Col md={{ span: 24 }} lg={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }} >
-                <Form.Item name={['user', 'introduction']} placeholder="Message">
-                  <Input.TextArea placeholder="Message" />
-                </Form.Item>
-
-              </Col>
-            </Row>
-
-            <div className="" style={{ textAlign: "center" }}>
-
-              <Button type="primary" htmlType="submit" style={{width:"200px", height:"45px", fontSize:"20px", borderRadius:"7px", background:"lightblue"}}>
-                Submit
-              </Button>
+    return (
+        <>
+            <div id="contact" className={homeObjFour?.lightBg ? 'home__hero-section' : 'home__hero-section darkBg'} >
+                <div className='container' style={{paddingTop:"3rem"}}>
+                    <div className='row home__hero-row' style={{ display: 'flex', flexDirection: homeObjFour?.imgStart === 'start' ? 'row-reverse' : 'row' }}>
+                        <div className='col'>
+                            <div className='home__hero-text-wrapper'>
+                                {homeObjFour?.topLine&&<div className='top-line'>{homeObjFour?.topLine}</div>}
+                                <h1 className={homeObjFour?.lightText ? 'heading' : 'heading dark'}>
+                                    {homeObjFour?.headline}
+                                </h1>
+                                <p className={ homeObjFour?.lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
+                                    {homeObjFour?.description}
+                                </p>
+                            </div>
+                        </div>
+                        <div className='col'>
+                            <div className='home__hero-img-wrapper'>
+                                <form className="myForm" style={{marginTop:"-50px",backgroundColor:"#09091e"}}>
+                                    <div id="contact-details">
+                                        <label for="customer_name">Name </label>
+                                        <input type="text" name="customer_name" id="customer_name" required />
+                                        <label for="email_address">Email </label>
+                                        <input type="email" name="email_address" id="email_address" />
+                                        <label for="phone">Phone </label>
+                                        <input type="tel" name="phone" id="phone" />
+                                    </div>
+                                    <div id="comment-box">
+                                        <label for="comments">Comments</label>
+                                        <textarea name="comments" id="comments" maxlength="500"></textarea>
+                                    </div>
+                                    <button>Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>                       
             </div>
-
-          </Form>
-        </Card>
-      </Row>
-    </div>
-  );
-};
+        </>
+    )
+}
 
 export default Contact;

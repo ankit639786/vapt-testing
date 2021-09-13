@@ -1,34 +1,29 @@
 const questions = [
     {
       id: 1,
-      title: 'Why Should we use VAPT?',
+      title: 'Q. What is VAPT Testing?',
       info:
-        'Unicorn vinyl poutine brooklyn, next level direct trade iceland. Shaman copper mug church-key coloring book, whatever poutine normcore fixie cred kickstarter post-ironic street art.',
+        'Vulnerability Assessment and Penetration Testing is a combination of two forms of testing, It is to identify possible security issues and vulnerabilities in the network, server, web app, and mobile app. Both the services are important for enterprises to find out the undetected errors and flaws in their IT infrastructure and mitigate the same using specialized techniques.',
     },
     {
       id: 2,
-      title: 'How do I change my My Page password?',
+      title: 'Q. Why Do I Need VAPT Service?',
       info:
-        'Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.',
+          "With a rapid increase in the numbers of mobile apps, IoT-based devices, fast development cycles, etc., there are chances of vulnerabilities. The undetected cyberattacks and security threats can compromise the functionality of the network, server, web app, and more. Thus, VAPT testing helps identify and validate the security issues, understand the impact and mitigate the risk factor."    
     },
     {
       id: 3,
-      title: 'What is BankID?',
+      title: 'Q. Who Carries Out the VAPT Test?',
       info:
-        'Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.',
+        'The expert team of security consultants with relevant experience performs the security test. The team has extensive knowledge of VAPT testing tools, scanners, and has industry standards certifications.',
     },
     {
       id: 4,
-      title: 'Whose birth number can I use?',
+      title: 'Q. What is the Frequency of VAPT Testing??',
       info:
-        'Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.',
-    },
-    {
-      id: 5,
-      title: 'When do I recieve a password ordered by letter?',
-      info:
-        'Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ',
+        'VAPT Testing needs to be performed regularly, if there are frequent compliance or change cycles in your system internally.',
     },
   ]
+  
   export default questions
   

@@ -1,7 +1,4 @@
 import image1 from "../../assests/images/banner.png"
-import image2 from "../../assests/images/banner2.png"
-import image3 from "../../assests/images/graph.png"
-import image5 from "../../assests/images/locks.jpg"
 
 export const homeObjOne = {
   lightBg: false,
@@ -9,84 +6,10 @@ export const homeObjOne = {
   lightTextDesc: true,
   topLine: '',
   headline: 'Vulnerability Assessment & Penetration Testing (VAPT)',
-  description:
-    'Secure your Web Application from the Cyber Attacks',
+  description:"Safeguard your business network & website against persistent threats with trusted VAPT Testing Services.",
   buttonLabel: '',
   imgStart: '',
   img: image1,
   alt: 'Credit Card',
   redirectPage:''
 };
-
-// export const homeObjTwo = {
-//   lightBg: false,
-//   lightText: true,
-//   lightTextDesc: true,
-//   topLine: '',
-//   headline: 'VAPT Services',
-//   description:'',
-//   descriptionArr:["Application Security Services","Network Security Services","Database Security Services","Host Security Services"],
-//   buttonLabel: '',
-//   imgStart: '',
-//   img: image2,
-//   alt: 'Vault',
-//   redirectPage:"service"
-// };
-
-export const homeObjThree = {
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: '',
-  headline: 'VAPT',
-  description:
-  "A vulnerability assessment is a systematic review of security weaknesses in an information system. It evaluates if the system is susceptible to any known vulnerabilities, assigns severity levels to those vulnerabilities, and recommends remediation or mitigation, if and whenever needed.",
-  buttonLabel: '',
-  imgStart: 'start',
-  img: 'images/svg-7.svg',
-  alt: 'Vault',
-  redirectPage:"vapt"
-};
-
-// export const homeObjFour = {
-//   lightBg: false,
-//   lightText: true,
-//   lightTextDesc: true,
-//   topLine: '',
-//   headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-//   description:
-//   'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-//   buttonLabel: '',
-//   imgStart: '',
-//   img: image3,
-//   alt: 'Vault'
-// };
-
-export const homeObjFive = {
-  lightBg: true,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: '',
-  headline: 'About Us',
-  description:
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  buttonLabel: '',
-  imgStart: 'start',
-  img: "images/svg-4.svg",
-  alt: 'Vault',
-  redirectPage:"about"
-};
-
-// export const homeObjSix = {
-//   lightBg: false,
-//   lightText: true,
-//   lightTextDesc: true,
-//   topLine: '',
-//   headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-//   description:
-//     'Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-//   buttonLabel: '',
-//   imgStart: 'start',
-//   img: image5,
-//   alt: 'Vault'
-// };

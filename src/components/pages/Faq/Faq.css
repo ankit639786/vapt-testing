@@ -1,5 +1,11 @@
 .faq{
     font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#accordion{
+    width: 50%;
+    margin: 5px 40px 5px 40px ;
 }
 
 @media screen and (max-width: 991px) {
@@ -13,6 +19,11 @@
           font-size: 25px;
       }
    
+      #accordion{
+          width: 90%;
+          margin: 0;
+          padding: 5px;
+      }
   
     
   }

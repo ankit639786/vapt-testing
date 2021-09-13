@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import './HeroSection.css';
 
 import { Button } from './Button';
+import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
 
 function HeroSection({
@@ -18,7 +19,8 @@ function HeroSection({
   alt,
   imgStart,
   redirectPage,
-  descriptionArr
+  descriptionArr,
+  bulletPoints
 }) {
   
   useEffect(()=>{
@@ -50,6 +52,15 @@ function HeroSection({
                     </p>
                   )
                 }
+                <ul>
+                {
+                  bulletPoints?.map(ele =>
+                    <li className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
+                      {ele}
+                    </li>
+                  )
+                }
+                </ul>
                 {buttonLabel&&<Link to="#">
                   <Button buttonSize='btn--wide' buttonColor='blue'>
                     {buttonLabel}

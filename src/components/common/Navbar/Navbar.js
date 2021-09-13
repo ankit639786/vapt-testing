@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
+import { Button } from '../Button/Button';
 import { Link } from 'react-scroll';
-
 import './Navbar.css';
-import { MdFingerprint } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import Menu from './Menu'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -67,8 +64,7 @@ function Navbar() {
         <nav className='navbar'>
           <div className='navbar-container container'>
             <Link to="vapt" spy={true} smooth={true} className='navbar-logo' onClick={closeMobileMenu}>
-              <MdFingerprint className='navbar-icon' /> 
-              VAPT
+              V@PT
             </Link>
             <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -78,7 +74,6 @@ function Navbar() {
                 obj?.map(item=>
                   <li className='nav-item' style={{cursor:"pointer"}}>
                     <Link to={item?.ids} spy={true} smooth={true} className='nav-links' onClick={closeMobileMenu}>
-                      {/* <Menu navMenu={item}/> */}
                       {item?.menu}
                     </Link>
                 </li>

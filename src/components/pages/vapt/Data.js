@@ -3,8 +3,9 @@ export const homeObjOne = {
   lightText: true,
   lightTextDesc: true,
   topLine: '',
-  headline: 'Why do Vulnerability Assessment',
-  description: "Vulnerability Assessment and Penetrations Testing (VAPT) or simply, Pen testing or penetration testing, is a systematic process of determining the vulnerability of an application. With the rise of hacking and other security threats, organizations are resorting to VAPT services to protect their sensitive data from external security hacks. Penetration testing involves a simulation of the process of hacking a software/application and is a form of ethical hacking that is carried out to bring out the flaws to the surface.. ",
+  headline: 'Why Is VAPT Crucial to Your Business?',
+  description: "VAPT (Vulnerability Assessment & Penetration Testing) is an extensive assessment conducted by cybersecurity experts to identify the threats in an enterprise’s network system and measure the level of vulnerability. It is essential for companies that store sensitive data in the network ecosystem and have not checked the possible vulnerabilities inside. At such a crucial juncture, we provide our real-time VAPT testing assistance to identify unauthenticated access to your information and scan for cyberattacks to safeguard your network system.",
+  bulletPoints:["Comprehensive evaluation of the network.","Finding & understanding loopholes or errors that could lead to loss of business data.","Detailed view of threats that the application or network is facing.","Eliminating the possible cybersecurity threats and protecting the network against data loss, unauthorized access, etc."],
   buttonLabel: '',
   imgStart: '',
   img: 'images/svg-1.svg',
@@ -12,6 +13,20 @@ export const homeObjOne = {
   redirectPage:"vapt_assessment"
 };
 
+export const homeObjTwo = {
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: '',
+  headline: 'Types of a vulnerability scanner',
+  description: "",
+  descriptionArr: ["1. Cloud-Based Vulnerability Scanners", "2. Host-Based Vulnerability Scanners", "3. Network-Based Vulnerability Scanners ", "4. Database-Based Vulnerability Scanners"],
+  buttonLabel: '',
+  imgStart: 'start',
+  img: 'images/svg-5.svg',
+  alt: 'Vault',
+  redirectPage:"vapt_types"
+};
 
 export const homeObjThree = {
   lightBg: true,
@@ -44,17 +59,17 @@ export const homeObjFour = {
 };
 
 
-export const homeObjTwo = {
+export const homeObjFive = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
   topLine: '',
-  headline: 'Types of a vulnerability scanner',
-  description: "",
-  descriptionArr: ["1. Cloud-Based Vulnerability Scanners", "2. Host-Based Vulnerability Scanners", "3. Network-Based Vulnerability Scanners ", "4. Database-Based Vulnerability Scanners"],
+  headline: 'VAPT',
+  description:
+  "A vulnerability assessment is a systematic review of security weaknesses in an information system. It evaluates if the system is susceptible to any known vulnerabilities, assigns severity levels to those vulnerabilities, and recommends remediation or mitigation, if and whenever needed.",
   buttonLabel: '',
   imgStart: 'start',
-  img: 'images/svg-5.svg',
+  img: 'images/svg-7.svg',
   alt: 'Vault',
-  redirectPage:"vapt_types"
+  redirectPage:"vapt"
 };

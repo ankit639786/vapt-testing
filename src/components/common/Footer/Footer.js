@@ -1,19 +1,18 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from '../../Button';
+import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from 'react-icons/fa';
-import { MdFingerprint } from 'react-icons/md';
 
 function Footer() {
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        V@PT
         </p>
         <p className='footer-subscription-text'>
-        Lorem ipsum dolor sit amet.
+        Secure your Web Application from the Cyber Attacks.
         </p>
         <div className='input-areas'>
           <form>
@@ -61,11 +60,10 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              <MdFingerprint className='navbar-icon' />
-              VAPT
+              V@PT
             </Link>
           </div>
-          <small className='website-rights'>@VAPT2021</small>
+          <small className='website-rights'>V@PT2021</small>
           <div className='social-icons'>
             <Link className='social-icon-link' to='/' target='_blank' aria-label='Facebook' >
               <FaFacebook />
