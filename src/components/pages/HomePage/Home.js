@@ -7,6 +7,7 @@ import './Home.css';
 import Vapt from '../vapt/Vapt';
 import About from '../About/About';
 import Faq from '../Faq/Faq';
+import Carousel from '../../common/Carousel/Carousel';
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <About />
       <Contact />
       <Faq />
+      <Carousel/>
     </>
   );
 }
