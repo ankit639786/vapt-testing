@@ -10,7 +10,7 @@ import {Data, Header,Paragraph} from './Data'
 
 function Card(props) {
   useEffect(()=>{
-    Aos.init({duration: 2000});
+    Aos.init({duration: 4000});
 
   }, []);
 
