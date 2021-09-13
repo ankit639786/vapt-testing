@@ -2,87 +2,6 @@ import React from 'react';
 import './Contact.css';
 
 const Contact = () => {
-  const [form] = Form.useForm();
-
-  const onFinish = (values) => {
-    console.log('Received values of form: ', values);
-  };
-
-  const prefixSelector = (
-    <Form.Item name="prefix" noStyle>
-      <Select
-        style={{
-          width: 70,
-        }}
-      >
-        <Option value="86">+91</Option>
-        <Option value="87">+87</Option>
-      </Select>
-    </Form.Item>
-  );
-  const suffixSelector = (
-    <Form.Item name="suffix" noStyle>
-      <Select
-        style={{
-          width: 70,
-        }}
-      >
-        <Option value="USD">$</Option>
-        <Option value="CNY">¥</Option>
-      </Select>
-    </Form.Item>
-  );
-  const [autoCompleteResult, setAutoCompleteResult] = useState([]);
-
-
-
-  return (
-    <>
-    <div
-      style={{
-
-
-        background:
-          "url(https://media-exp1.licdn.com/dms/image/C561BAQGfEhGPeVC6Yg/company-background_10000/0/1519798318510?e=2159024400&v=beta&t=7afXhqZPYPEH-PAMW_EJKhol_ZADnzfZubuIfyZ2nJI), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))",
-        backgroundBlendMode: "overlay",
-
-        width: "100%",
-        height: "100%",
-        backgroundSize: "100%",
-        repeat: "no-repeat",
-
-      }}
-    >
-      <Row
-        type="flex"
-        justify="center"
-        align="middle"
-        style={{ minHeight: "100vh" }}
-      >
-        <Card style={{ width: "75%", marginBottom: "80px", borderRadius: "5px", border:"none", background:"transparent"}}>
-
-          <Form>
-
-            <h1 style={{ textAlign: "center", color:"white" }}>Contact Us</h1>
-
-
-            <Row gutter={16}>
-
-              <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}  >
-                <Form.Item
-
-                  name=" Name"
-                  rules={[
-                    {
-                      required: true,
-                      message: "Please input your Name",
-                    },
-                  ]}
-                >
-                  <Input placeholder="Name" size="large" />
-                </Form.Item>
-              </Col>
-
 
     const homeObjFour = {
         lightBg: true,
@@ -138,5 +57,6 @@ const Contact = () => {
         </>
     )
 }
+
 
 export default Contact;

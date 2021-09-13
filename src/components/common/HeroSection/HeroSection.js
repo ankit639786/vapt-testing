@@ -3,7 +3,7 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 import './HeroSection.css';
 
-import { Button } from './Button';
+//import { Button } from './Button';
 import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
 
