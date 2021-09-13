@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from "aos";
+import 'aos/dist/aos.css';
 import './HeroSection.css';
+
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
@@ -17,6 +20,11 @@ function HeroSection({
   redirectPage,
   descriptionArr
 }) {
+  
+  useEffect(()=>{
+    Aos.init({duration: 2000});
+
+  }, []);
   return (
     <>
       <div id={redirectPage&&redirectPage} className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'} >
@@ -50,8 +58,10 @@ function HeroSection({
               </div>
             </div>
             <div className='col'>
+            <div data-aos={imgStart ==="start" ? "fade-right" : "fade-left"}>
               <div className='home__hero-img-wrapper'>
                 <img src={img} alt={alt} className='home__hero-img' />
+              </div>
               </div>
             </div>
           </div>
