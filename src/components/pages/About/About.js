@@ -5,8 +5,8 @@ import { homeObjTwo, homeObjThree } from './Data';
 function Products() {
   return (
     <>
-      <HeroSection {...homeObjTwo} />
       <HeroSection {...homeObjThree} />
+      <HeroSection {...homeObjTwo} />
     </>
   );
 }

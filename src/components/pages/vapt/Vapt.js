@@ -1,13 +1,15 @@
 import React from 'react';
 import HeroSection from '../../common/HeroSection/HeroSection';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from './Data';
+import Carousel from '../../common/Carousel/Carousel';
 
 function Vapt() {
   return (
     <>
       <HeroSection {...homeObjFive} />
       <HeroSection {...homeObjOne} />
-      <HeroSection {...homeObjThree} />
+      <Carousel />
+      {/* <HeroSection {...homeObjThree} /> */}
       <HeroSection {...homeObjFour} />
       <HeroSection {...homeObjTwo} />
     </>

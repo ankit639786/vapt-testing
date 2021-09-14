@@ -14,45 +14,39 @@ function Footer() {
         <p className='footer-subscription-text'>
         Secure your Web Application from the Cyber Attacks.
         </p>
-        <div className='input-areas'>
+        {/* <div className='input-areas'>
           <form>
             <input className='footer-input' name='email' type='email' placeholder='Your Email' />
             <Button buttonStyle='btn--outline'>Subscribe</Button>
           </form>
-        </div>
+        </div> */}
       </section>
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+            <Link to='/'>Why Choose Us?</Link>
           </div>
           <div className='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+            <h2>VAPT</h2>
+            <Link to='/'>VAPT Services</Link>
+            <Link to='/'>Why Is VAPT Crucial to Your Business?</Link>
+            <Link to='/'>Vulnerability Assessment Process</Link>
+            <Link to='/'>VAPT Testing Tools</Link>
+            <Link to='/'>Types of Vulnerability Scanner</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
+            <h2>Services</h2>
+            <Link to='/'>VAPT Testing Services for Digital & IT Infrastructure</Link>
           </div>
           <div className='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <h2>Address</h2>
+            <Link to='/'>Unit No. 650, 6th Floor,</Link>
+            <Link to='/'>Tower A, Spaze iTechPark,</Link>
+            <Link to='/'>Sector-49, Sohna Road,</Link>
+            <Link to='/'>Gurgaon.</Link>
           </div>
         </div>
       </div>

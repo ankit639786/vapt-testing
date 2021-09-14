@@ -20,7 +20,8 @@ function HeroSection({
   imgStart,
   redirectPage,
   descriptionArr,
-  bulletPoints
+  bulletPoints,
+  pointDescription
 }) {
   
   useEffect(()=>{
@@ -46,9 +47,17 @@ function HeroSection({
                   {description}
                 </p>
                 {
-                  descriptionArr?.map(ele =>
-                    <p className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
+                  descriptionArr?.map((ele,index) =>
+                    <p key={index} className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
                       {ele}
+                    </p>
+                  )
+                }
+                {
+                  pointDescription?.map(ele =>
+                    <p key={ele?.id} className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
+                      <b>{`${ele?.name}:`}</b>
+                      <p>{ele?.Desc_}</p>
                     </p>
                   )
                 }

@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     height: 200,
   },
   content:{
-    height:150
+    height:200
   }
 });
 

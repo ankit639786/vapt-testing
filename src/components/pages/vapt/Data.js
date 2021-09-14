@@ -18,9 +18,31 @@ export const homeObjTwo = {
   lightText: false,
   lightTextDesc: false,
   topLine: '',
-  headline: 'Types of a vulnerability scanner',
-  description: "",
-  descriptionArr: ["1. Cloud-Based Vulnerability Scanners", "2. Host-Based Vulnerability Scanners", "3. Network-Based Vulnerability Scanners ", "4. Database-Based Vulnerability Scanners"],
+  headline: 'Different Types of Vulnerability Scanner',
+  description: "Vulnerability Scanner is an automated tool to identify and create an inventory of IT assets connected to a network. It can be categorized into 5 types based on the different assets of an organization.",
+  descriptionArr: [],
+  pointDescription:[
+    {
+      id:1,
+      name:"Network-Based Scanners",
+      Desc_:"Identify possible network security flaws and vulnerabilities. Scan the attacks on wireless and wired network systems to uncover unauthorized devices."
+    },
+    {
+      id:2,
+      name:"Host-Based Scanners",
+      Desc_:"Versatile scanner to identify vulnerabilities in servers, network hosts, and workstations at different places. Get to know the history of configuration settings and patched systems."
+    },
+    {
+      id:3,
+      name:" Wireless Scanners",
+      Desc_:"Vulnerability scanner to identify rogue access points and validate that the company’s network is securely configured or not. Finding unauthorized access to the company’s network access points."
+    },
+    {
+      id:4,
+      name:"Application Scanners",
+      Desc_:"A profitable vulnerability scanner to check the enterprise’s website and detect the known security threats inside. Also, find out the erroneous configurations in a web app."
+    },
+  ],
   buttonLabel: '',
   imgStart: 'start',
   img: 'images/svg-5.svg',
@@ -28,29 +50,56 @@ export const homeObjTwo = {
   redirectPage:"vapt_types"
 };
 
-export const homeObjThree = {
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: '',
-  headline: 'Vulnerability Assessment Process',
-  description: "",
-  descriptionArr: ["1. Goals & Objectives", "2. Scope", "3. Information Gathering", "4. Vulnerability Detection", "5.Information Analysis and Planning "],
-  buttonLabel: '',
-  imgStart: 'start',
-  img: 'images/svg-7.svg',
-  alt: 'Vault',
-  redirectPage:"vapt_process"
-};
+// export const homeObjThree = {
+//   lightBg: true,
+//   lightText: false,
+//   lightTextDesc: false,
+//   topLine: '',
+//   headline: 'Vulnerability Assessment Process',
+//   description: "",
+//   descriptionArr: ["1. Goals & Objectives", "2. Scope", "3. Information Gathering", "4. Vulnerability Detection", "5.Information Analysis and Planning "],
+//   buttonLabel: '',
+//   imgStart: 'start',
+//   img: 'images/svg-7.svg',
+//   alt: 'Vault',
+//   redirectPage:"vapt_process"
+// };
 
 export const homeObjFour = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
   topLine: '',
-  headline: 'Tools for Vulnerability Scanning',
+  headline: 'VAPT Testing Tools',
   description: "",
-  descriptionArr: [" 1. Nikto2", "2. Netsparker", "3. Acunetix ", "4. Intruder", "5. MBSA"],
+  descriptionArr: [],
+  pointDescription:[
+    {
+      id:1,
+      name:"Nikto2",
+      Desc_:"It is a powerful and feature-rich vulnerability scanner for web applications, mobile apps, servers, and content management systems."
+    },
+    {
+      id:2,
+      name:"Netsparker",
+      Desc_:"A robust cyber threat finding tool for enterprise websites. The tool is proficient to exploit weaknesses like SQL injection and XSS."
+    },
+    {
+      id:3,
+      name:"Acunetix",
+      Desc_:"Another powerful vulnerability assessment tool is Acunetix. It automatically scans web apps, websites, and API."
+    },
+    {
+      id:4,
+      name:"Intruder",
+      Desc_:"A complete Cloud-based vulnerability scanner that helps to assess the security threats in an IT infrastructure. It ensures security audits on a database."
+    },
+    {
+      id:5,
+      name:"MBS",
+      Desc_:"A specialized vulnerability scanner that provides a streamlined manner of identifying common security issues, missing updates, and misconfigurations."
+    }
+  ],
   buttonLabel: '',
   imgStart: '',
   img: 'images/svg-8.svg',
@@ -64,9 +113,9 @@ export const homeObjFive = {
   lightText: false,
   lightTextDesc: false,
   topLine: '',
-  headline: 'VAPT',
-  description:
-  "A vulnerability assessment is a systematic review of security weaknesses in an information system. It evaluates if the system is susceptible to any known vulnerabilities, assigns severity levels to those vulnerabilities, and recommends remediation or mitigation, if and whenever needed.",
+  headline: 'Vulnerability Assessment & Penetration Testing Services',
+  description:"",
+  descriptionArr:["There is a rapid penetration of networks, mobile apps, and websites across the business ecosystem. A vast set of crucial information is stored across different devices and systems that help businesses operate seamlessly. Despite the convenience of competitive digital systems available today, the threats of cyberattacks and vulnerabilities are on the rise. Attempts to get illegal access to your network will create intense consequences for the business are increasing. Thus, avoid the loss of the enterprise’s dignity with the aid of Vulnerability Assessment & Penetration Testing (VAPT) services. We are a trusted partner for offering comprehensive and adaptive cybersecurity threat analysis to allow businesses to protect the network infrastructure against possible attacks.","Vulnerability Assessment & Penetration Testing is a valuable service for an organization to assess the potential risk to an enterprise's websites, networks, IoT Devices, Cloud applications, and more. VAPT combines two critical security services, vulnerability assessment and penetration testing for identifying risks, security audit, forensic analysis, security amendment, monitoring, and recommendation. Our certified testers provide both manual and automated VAPT testing assistance. VAPT identifies the possible threats and fixes cybersecurity risks across the spectrum of IT infrastructure."],
   buttonLabel: '',
   imgStart: 'start',
   img: 'images/svg-7.svg',

@@ -12,15 +12,13 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 350,
     borderRadius:10,
-    // backgroundColor:"red"
-   
   },
   media: {
     height: 500,
     // backgroundColor:"red"
   },
   content:{
-    height:220,
+    height:190,
     width:250,
     
   }

@@ -13,9 +13,9 @@
 // };
 
 export const homeObjTwo = {
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
   topLine: '',
   headline: 'About Us',
   description:"VAPT Testing India is a reliable and leading Vulnerability Assessment & Penetration Testing (VAPT) company that offers security assessment services. Leverage the deep-level understanding of our expert testers to identify and mitigate possible security attacks. We are here to detect and diminish the possibilities of data breaches, network vulnerability, and more. Our team harnesses the power of the latest cyber offensive intelligence, scanners, and productive tools to identify & address security issues. Moreover, we continue to deliver the highest standards of customer support with exceeding expectations.",    
@@ -27,9 +27,9 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: '',
   headline: 'Why Choose Us?',
   description:'VAPT Test provides an extensive suite of manual and automated Vulnerability Assessment & Penetration Testing Services. We provide consistent quality and flawless vulnerabilities detection and testing of the enterprise’s network system. When it comes to VAPT of IT infrastructure, we have our stronghold points related to the following:',
