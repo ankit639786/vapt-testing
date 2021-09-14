@@ -36,10 +36,10 @@ console.log(props.data);
       <CardActionArea>
         {/* <CardMedia className={classes.media} image={image} title="Contemplative Reptile" /> */}
         <CardContent className={classes.content}>
-        <Typography gutterBottom variant="h7" component="h2">
+        <Typography gutterBottom variant="h5" component="h2">
             {step}
           </Typography>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h7" component="h3">
             {name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
