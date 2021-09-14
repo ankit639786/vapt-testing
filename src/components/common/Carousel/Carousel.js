@@ -6,6 +6,7 @@ import img from "../../assests/images/service22.jpg";
 import Cards from './cards';
 import { Grid } from "@material-ui/core";
 import {Data} from './Data';
+import "./Carousel.css";
 
 const Carouse = () => {
 
@@ -18,9 +19,9 @@ const Carouse = () => {
 
     return (
         <>
-            <h1 style={{ textAlign: 'center', fontSize: "35px", marginTop: "5rem",color:"black" }}>End-to-End Vulnerability Assessment Process</h1>
+            <h1 className="car" style={{ textAlign: 'center',  marginTop: "5rem",color:"black" }}>End-to-End Vulnerability Assessment Process</h1>
 
-            <h2 style={{ textAlign: 'center', fontSize: "25px", color:"black" }}>We follow a step-by-step VAPT test to identify and analyze system vulnerabilities.</h2>
+            <h2 className="car1" style={{ textAlign: 'center', color:"black" }}>We follow a step-by-step VAPT test to identify and analyze system vulnerabilities.</h2>
 
 
             <Carousel breakPoints={breakPoints} swipeable={true} style={{marginTop:"20px",paddingTop:"35px"}}>

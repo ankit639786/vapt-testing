@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     // backgroundColor:"red"
   },
   content:{
-    height:200,
+    height:220,
     width:250,
     
   }
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 
 export default function MediaCard(props) {
   const classes = useStyles();
-  const {name,image,Description} = props.data;
+  const {name,step,image,Description} = props.data;
 console.log(props.data);
   return (
     
@@ -36,6 +36,9 @@ console.log(props.data);
       <CardActionArea>
         {/* <CardMedia className={classes.media} image={image} title="Contemplative Reptile" /> */}
         <CardContent className={classes.content}>
+        <Typography gutterBottom variant="h7" component="h2">
+            {step}
+          </Typography>
           <Typography gutterBottom variant="h5" component="h2">
             {name}
           </Typography>

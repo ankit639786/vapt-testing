@@ -1,0 +1,33 @@
+.car{
+    font-size: 40px;
+    
+}
+
+.car1{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+
+
+@media screen and (max-width: 991px) {
+   .car{
+       font-size:19px
+   }
+   .car1{
+       font-size:13px;
+       font-weight: 200;
+   }
+  }
+  
+  @media screen and (max-width: 768px) {
+     .car{
+         font-size:19px
+     }
+     .car1{
+         font-size:13px;
+         font-weight:200
+     }
+    
+  }
+  
