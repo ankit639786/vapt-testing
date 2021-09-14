@@ -85,13 +85,13 @@ const Contact = () => {
 
           <Form>
 
-            <h1 style={{ textAlign: "center", color:"white" }}>Contact Us</h1>
+            <h1 style={{ textAlign: "center", color:"white", fontSize:"50px" , marginBottom:"30px"}}>Contact Us</h1>
 
 
             <Row gutter={16}>
 
               <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}  >
-                <Form.Item
+                <Form.Item style={{marginBottom:"30px"}}
 
                   name=" Name"
                   rules={[
@@ -101,13 +101,13 @@ const Contact = () => {
                     },
                   ]}
                 >
-                  <Input placeholder="Name" size="large" />
+                  <Input placeholder="Name" size="large"  style={{fontWeight:"bold", color:"black",}}/>
                 </Form.Item>
               </Col>
 
 
               <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}>
-                <Form.Item
+                <Form.Item style={{marginBottom:"30px"}}
                   name="email"
 
                   rules={[
@@ -121,7 +121,7 @@ const Contact = () => {
                     },
                   ]}
                 >
-                  <Input placeholder="Email" size="large" />
+                  <Input placeholder="Email" size="large"  style={{fontWeight:"bold", color:"black", }} />
                 </Form.Item>
               </Col>
             </Row>
@@ -131,7 +131,7 @@ const Contact = () => {
             <Row gutter={16}>
               <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}>
 
-                <Form.Item
+                <Form.Item style={{marginBottom:"30px"}}
                   name="phone"
 
                   rules={[
@@ -144,7 +144,7 @@ const Contact = () => {
                   <Input
 
 
-                    placeholder="Phone Number" size="large"
+                    placeholder="Phone Number" size="large"  style={{fontWeight:"bold", color:"black", }}
                   />
                 </Form.Item>
               </Col>
@@ -152,17 +152,17 @@ const Contact = () => {
 
 
               <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}>
-                <Form.Item
+                <Form.Item style={{marginBottom:"30px"}}
 
                   name=" Country"
                   rules={[
                     {
                       required: true,
-                      message: "Please input your Countrt",
+                      message: "Please input your Country",
                     },
                   ]}
                 >
-                  <Input placeholder="Country" size="large" />
+                  <Input placeholder="Country" size="large"  style={{fontWeight:"bold", color:"black",  }} />
                 </Form.Item>
 
 
@@ -170,8 +170,8 @@ const Contact = () => {
             </Row>
             <Row>
               <Col md={{ span: 24 }} lg={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }} >
-                <Form.Item name={['user', 'introduction']} placeholder="Message">
-                  <Input.TextArea placeholder="Message" />
+                <Form.Item style={{marginBottom:"30px"}} name={['user', 'introduction']} placeholder="Message">
+                  <Input.TextArea placeholder="Message"  style={{fontWeight:"bold", color:"black", }} />
                 </Form.Item>
 
               </Col>
