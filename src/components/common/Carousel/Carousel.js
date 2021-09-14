@@ -19,6 +19,7 @@ const Carouse = () => {
 
     return (
         <>
+        <div id="vapt_process">
             <h1 className="car">End-to-End Vulnerability Assessment Process</h1>
 
             <h2 className="car1">We follow a step-by-step VAPT test to identify and analyze system vulnerabilities.</h2>
@@ -32,6 +33,7 @@ const Carouse = () => {
                     )
                 }
             </Carousel>
+            </div>
         </>
     )
 }

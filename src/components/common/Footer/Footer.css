@@ -54,6 +54,10 @@
   justify-content: center;
 }
 
+.footer-links a{
+  cursor: pointer;
+}
+
 .footer-link-wrapper {
   display: flex;
 }

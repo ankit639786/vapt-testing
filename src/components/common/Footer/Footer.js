@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Button } from '../Button/Button';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 function Footer() {
@@ -25,21 +25,22 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/'>Why Choose Us?</Link>
+            <Link spy={true} smooth={true} to='about'>About Us</Link>
+            <Link spy={true} smooth={true} to='why_us'>Why Choose Us?</Link>
           </div>
           <div className='footer-link-items'>
             <h2>VAPT</h2>
-            <Link to='/'>VAPT Services</Link>
-            <Link to='/'>Why Is VAPT Crucial to Your Business?</Link>
-            <Link to='/'>Vulnerability Assessment Process</Link>
-            <Link to='/'>VAPT Testing Tools</Link>
-            <Link to='/'>Types of Vulnerability Scanner</Link>
+            <Link spy={true} smooth={true} to='vapt'>VAPT Services</Link>
+            <Link spy={true} smooth={true} to='vapt_crucial'>Why Is VAPT Crucial to Your Business?</Link>
+            <Link spy={true} smooth={true} to='vapt_process'>Vulnerability Assessment Process</Link>
+            <Link spy={true} smooth={true} to='vapt_tools'>VAPT Testing Tools</Link>
+            <Link spy={true} smooth={true} to='vapt_types'>Types of Vulnerability Scanner</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <h2>Services</h2>
-            <Link to='/'>VAPT Testing Services for Digital & IT Infrastructure</Link>
+            <Link spy={true} smooth={true} to='service'>VAPT Testing Services for Digital & IT Infrastructure</Link>
           </div>
           <div className='footer-link-items'>
             <h2>Address</h2>
@@ -53,7 +54,7 @@ function Footer() {
       <section className='social-media'>
         <div className='social-media-wrap'>
           <div className='footer-logo'>
-            <Link to='/' className='social-logo'>
+            <Link to='banner' spy={true} smooth={true} className='social-logo'>
               V@PT
             </Link>
           </div>

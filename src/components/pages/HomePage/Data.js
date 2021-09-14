@@ -11,5 +11,5 @@ export const homeObjOne = {
   imgStart: '',
   img: image1,
   alt: 'Credit Card',
-  redirectPage:''
+  redirectPage:'banner'
 };

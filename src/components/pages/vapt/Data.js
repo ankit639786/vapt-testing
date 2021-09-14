@@ -10,7 +10,7 @@ export const homeObjOne = {
   imgStart: '',
   img: 'images/svg-1.svg',
   alt: 'Credit Card',
-  redirectPage:"vapt_assessment"
+  redirectPage:"vapt_crucial"
 };
 
 export const homeObjTwo = {
