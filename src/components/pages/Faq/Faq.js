@@ -28,7 +28,7 @@ const Faq = () => {
                             <Accordion expanded={current === faq.id} onChange={changeState(faq.id)}>
                                 <AccordionSummary expandIcon={<ExpandMoreOutlined />}>
                                     <Typography varient="p" >
-                                        <h4 style={{ color: "black" }}> {faq.title}</h4>
+                                        <h4 style={{ color: "black" }}> <b>{faq.title}</b></h4>
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
