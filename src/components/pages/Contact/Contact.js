@@ -61,6 +61,7 @@ const Contact = () => {
 
   return (
     <div
+      id="contact"
       style={{
 
 

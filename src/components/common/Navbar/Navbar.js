@@ -63,7 +63,7 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <nav className='navbar'>
           <div className='navbar-container container'>
-            <Link to="vapt" spy={true} smooth={true} className='navbar-logo' onClick={closeMobileMenu}>
+            <Link to="banner" spy={true} smooth={true} className='navbar-logo' onClick={closeMobileMenu}>
               V@PT
             </Link>
             <div className='menu-icon' onClick={handleClick}>
