@@ -61,7 +61,10 @@ const Contact = () => {
 
   return (
     <div
+<<<<<<< HEAD
       id="contact"
+=======
+>>>>>>> ankit
       style={{
 
 
