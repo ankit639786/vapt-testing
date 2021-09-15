@@ -21,8 +21,6 @@
 }
 
 #contact{
-    /* height: 80vh;
-    padding: 10vh; */
     background: linear-gradient(to right, rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url("../../assests/images/back.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -35,10 +33,28 @@
     width: 70%;
     margin: 80px 0 80px 0;
     background: transparent !important;
-    box-shadow: 0px 0px 15px gray;
+    box-shadow: 0px 0px 10px gray;
 }
 
-@media screen and (max-device-width: 480px) {
+input::placeholder{
+    color: black !important;
+}
+
+textarea::placeholder{
+    color: black !important;
+}
+
+.cta{
+    width: 100%;
+    background-color: #030329;
+}
+.cta h1{
+    padding: 10vh;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+
+@media screen and (max-device-width: 768px) {
     .card_in_contact{
         width: 100%;
         margin: 0 !important;
