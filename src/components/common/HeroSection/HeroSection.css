@@ -61,10 +61,7 @@
 }
 
 .darkBg {
-  /* background-color: #09091e; */
   background-image: linear-gradient(to right, #020234 ,#04041b, #09091e);
-  /* background-image: url("./assests/images/back.jpg");
-  background-attachment: fixed; */
 }
 
 .home__hero-subtitle {

@@ -19,8 +19,8 @@ const useStyles = makeStyles({
   },
   content:{
     height:190,
-    width:250,
-    
+    width:300,
+    padding:25
   }
 });
 
@@ -34,10 +34,10 @@ console.log(props.data);
       <CardActionArea>
         {/* <CardMedia className={classes.media} image={image} title="Contemplative Reptile" /> */}
         <CardContent className={classes.content}>
-        <Typography gutterBottom variant="h5" component="h2">
-            {step}
+        <Typography gutterBottom variant="" component="h4">
+            <b>{step}</b>
           </Typography>
-          <Typography gutterBottom variant="h7" component="h3">
+          <Typography gutterBottom variant="" component="h2">
             {name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">

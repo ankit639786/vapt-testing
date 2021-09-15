@@ -7,7 +7,7 @@ export const homeObjOne = {
   topLine: '',
   headline: 'Vulnerability Assessment & Penetration Testing (VAPT)',
   description:"Safeguard your business network & website against persistent threats with trusted VAPT Testing Services.",
-  buttonLabel: '',
+  buttonLabel: 'Talk To Expert',
   imgStart: '',
   img: image1,
   alt: 'Credit Card',
