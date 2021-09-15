@@ -15,8 +15,8 @@ function Home() {
       <Vapt/>
       <Cards/>
       <About />
-      <Contact />
       <Faq />
+      <Contact />
     </>
   );
 }
