@@ -19,7 +19,7 @@ export const homeObjTwo = {
   lightTextDesc: false,
   topLine: '',
   headline: 'Different Types of Vulnerability Scanner',
-  description: "Vulnerability Scanner is an automated tool to identify and create an inventory of IT assets connected to a network. It can be categorized into 5 types based on the different assets of an organization.",
+  description: "Vulnerability Scanner is an automated tool to identify and create an inventory of IT assets connected to a network. It can be categorized into 4 types based on the different assets of an organization.",
   descriptionArr: [],
   pointDescription:[
     {
