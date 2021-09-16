@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '../Button/Button';
 import { Link } from 'react-scroll';
 import './Navbar.css';
+import { MdFingerprint } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
@@ -22,7 +23,7 @@ function Navbar() {
 
   const obj = [
     {
-      menu:"Vapt",
+      menu:"VAPT",
       ids:"vapt",
       sub_menu:[
         {ids:"vapt",subMenu:"VAPT"},
@@ -64,7 +65,7 @@ function Navbar() {
         <nav className='navbar'>
           <div className='navbar-container container'>
             <Link to="banner" spy={true} smooth={true} className='navbar-logo' onClick={closeMobileMenu}>
-              V@PT
+            <MdFingerprint className='navbar-icon' />VAPTTESTING India
             </Link>
             <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

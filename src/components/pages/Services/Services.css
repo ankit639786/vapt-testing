@@ -19,6 +19,23 @@
     font-family:  'Courgette', cursive;
 }
 
+@media screen and (max-width: 960px) {
+    .our_service_header h1{
+        text-align: center ;
+        width: 100%;
+        margin:50px 0 50px 0;
+        font-size: 15px;
+    }
+
+    .our_service_header p{
+        text-align: center ;
+        width: 100%;
+        margin-bottom:50px;
+        font-family:  'Courgette', cursive;
+        font-size: 12px;
+    }
+}
+
 .card_outer{
     margin-bottom: 40px !important;
     display: grid;

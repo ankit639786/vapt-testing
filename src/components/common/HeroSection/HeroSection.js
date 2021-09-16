@@ -5,7 +5,7 @@ import './HeroSection.css';
 
 //import { Button } from './Button';
 import { Button } from '../Button/Button';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 function HeroSection({
   lightBg,
@@ -56,7 +56,7 @@ function HeroSection({
                 {
                   pointDescription?.map(ele =>
                     <p key={ele?.id} className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
-                      <b>{`${ele?.name}:`}</b>
+                      <b>{`${ele?.name}`}</b>
                       <p>{ele?.Desc_}</p>
                     </p>
                   )
@@ -70,7 +70,9 @@ function HeroSection({
                   )
                 }
                 </ul>
-                {buttonLabel&&<Link to="#">
+                {
+                buttonLabel&&
+                <Link to="contact" spy={true} smooth={true}>
                   <Button buttonSize='btn--wide' buttonColor='blue'>
                     {buttonLabel}
                   </Button>

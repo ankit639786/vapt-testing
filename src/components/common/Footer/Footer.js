@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Button } from '../Button/Button';
 import { Link } from 'react-scroll';
+import { MdFingerprint } from 'react-icons/md';
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 function Footer() {
@@ -9,7 +10,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-        V@PT
+        <MdFingerprint className='navbar-icon' />VAPTTESTING INDIA
         </p>
         <p className='footer-subscription-text'>
         Secure your Web Application from the Cyber Attacks.
@@ -55,7 +56,7 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='banner' spy={true} smooth={true} className='social-logo'>
-              V@PT
+            <MdFingerprint className='navbar-icon' />VAPTTESTING INDIA
             </Link>
           </div>
           <small className='website-rights'>V@PT2021</small>

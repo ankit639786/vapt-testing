@@ -103,7 +103,12 @@ const Contact = () => {
 
 
   return (
+    <>
     <div id="contact" >
+    <div className="cta">
+      <h1>
+        <strong className="ribbon-content">Incorporate Comprehensive Application Evaluation with Vulnerability Assessment & Penetration Testing </strong></h1>
+    </div>
       <Row type="flex" justify="center" align="middle" >
         <Card className="card_in_contact" >
           <form onSubmit={handleSubmit}>
@@ -149,6 +154,7 @@ const Contact = () => {
         </Card>
       </Row>
     </div>
+    </>
   );
 };
 
