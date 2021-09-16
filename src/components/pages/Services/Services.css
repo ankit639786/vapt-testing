@@ -24,7 +24,7 @@
         text-align: center ;
         width: 100%;
         margin:50px 0 50px 0;
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .our_service_header p{
@@ -32,7 +32,7 @@
         width: 100%;
         margin-bottom:50px;
         font-family:  'Courgette', cursive;
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 

@@ -52,7 +52,6 @@ textarea::placeholder{
 .cta h1{
     padding: 10vh;
     text-align: center;
-    font-family: 'Courgette', cursive;
 }
 
 @media screen and (max-device-width: 768px) {
@@ -60,5 +59,18 @@ textarea::placeholder{
         width: 100%;
         margin: 0 !important;
         border: none !important;
+    }
+
+    .cta{
+        width: 100%;
+        background-color: #0d0d3a;
+        opacity: 0.8;
+        margin-bottom: 5vh;
+    }
+
+    .cta h1{
+        padding: 2vh;
+        text-align: center;
+        font-size: 15px;
     }
 }
