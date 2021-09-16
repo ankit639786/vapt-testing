@@ -1,46 +1,12 @@
 import React, { useState } from "react";
 import './Contact.css'
 import 'antd/dist/antd.css';
-import { Form, Input, InputNumber, Cascader, Select, Row,  Card, Col, Checkbox,  Button, AutoComplete, } from 'antd';
-import  {firebase,db} from '../firebase';
+import { Form, Input, Row,  Card, Col, Button } from 'antd';
+import  {db} from '../firebase';
 import { toast,ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-// const { Option } = Select;
-
-// const formItemLayout = {
-//   labelCol: { xs: { span: 24 }, sm: { span: 12 }, md: { span: 8 }, lg: { span: 8 } },
-//   wrapperCol: { xs: { span: 24 }, sm: { span: 12 }, md: { span: 12 }, lg: { span: 12 } }
-// }
-// const tailFormItemLayout = {
-//   wrapperCol: { xs: { span: 24 }, sm: { span: 12, offset: 12 }, md: { span: 12, offset: 8 }, lg: { span: 12, offset: 8 } }
-// };
-
-
 const Contact = () => {
-  // const [form] = Form.useForm();
-
-  // const onFinish = (values) => {
-  //   console.log('Received values of form: ', values);
-  // };
-
-  // const prefixSelector = (
-  //   <Form.Item name="prefix" noStyle>
-  //     <Select style={{ width: 70 }} >
-  //       <Option value="86">+91</Option>
-  //       <Option value="87">+87</Option>
-  //     </Select>
-  //   </Form.Item>
-  // );
-  // const suffixSelector = (
-  //   <Form.Item name="suffix" noStyle>
-  //     <Select style={{ width: 70 }} >
-  //       <Option value="USD">$</Option>
-  //       <Option value="CNY">¥</Option>
-  //     </Select>
-  //   </Form.Item>
-  // );
-  // const [autoCompleteResult, setAutoCompleteResult] = useState([]);
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -56,19 +22,19 @@ const Contact = () => {
     e.preventDefault();
 
     if(!name || !name.match(regexp)){
-      toast.error("Name is required");
+      toast.error("Name is required...!");
       
     }
     if(!email || !email.match(regexp)){
-      toast.error("Email is required");
+      toast.error("Invalid Email...!");
       
     }
     if(!number || !number.match(ent)){
-      toast.error("Phone No. is required");
+      toast.error("Invalid Phone No....!");
       
     }
     if(!organisation || !organisation.match(regexp)){
-      toast.error("Country Name is required");
+      toast.error("Invalid Organisation...!");
       
     }
     if(!message || !message.match(regexp)){
@@ -87,12 +53,9 @@ const Contact = () => {
         message: message
       })
       .then(() => {
-       console.log("success");
        toast.success("Submitted");
       })
       .catch((error) => {
-        // alert(error.message)
-        // setLoader(false)
         console.log("failed");
       })
       setName('');
