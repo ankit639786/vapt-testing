@@ -45,7 +45,7 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [number, setNumber] = useState('');
-  const [country, setCountry] = useState('');
+  const [organisation, setOrganisation] = useState('');
   const[message,setMessage]=useState('');
   const regexp = /[a-z]/gi;
   const ent= /^[7-9][0-9]{9}$/;
@@ -67,7 +67,7 @@ const Contact = () => {
       toast.error("Phone No. is required");
       
     }
-    if(!country || !country.match(regexp)){
+    if(!organisation || !organisation.match(regexp)){
       toast.error("Country Name is required");
       
     }
@@ -76,14 +76,14 @@ const Contact = () => {
       
     }
 
-    if(name.match(regexp) && email.match(regexp) && number.match(ent) && country.match(regexp) && message.match(regexp)){
+    if(name.match(regexp) && email.match(regexp) && number.match(ent) && organisation.match(regexp) && message.match(regexp)){
 
       db.collection('vapt')
       .add({
         name: name,
         email:email,
         number: number,
-        country: country,
+        organisation: organisation,
         message: message
       })
       .then(() => {
@@ -95,6 +95,11 @@ const Contact = () => {
         // setLoader(false)
         console.log("failed");
       })
+      setName('');
+      setEmail('');
+      setNumber('');
+      setOrganisation('');
+      setMessage('');
 }
     }
 
@@ -115,31 +120,31 @@ const Contact = () => {
             <h1 style={{ textAlign: "center", color: "white", fontSize: "50px", marginBottom: "30px" }}>Contact&nbsp;Us</h1>
             <Row gutter={16}>
               <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}  >
-                <Form.Item style={{ marginBottom: "30px" }} name="name"   rules={[{ required: true, message: "Please input your Name" }]} >
+                <Form.Item style={{ marginBottom: "30px" }}    rules={[{ required: true, message: "Please input your Name" }]} >
                   <Input placeholder="Name" type="text" value={name} size="large" onChange={(e) => setName(e.target.value)} />
                 </Form.Item>
               </Col>
               <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}>
-                <Form.Item style={{ marginBottom: "30px" }} name="email" rules={[{ type: 'email', message: 'The input is not valid E-mail!', }, { required: true, message: 'Please input your E-mail!' }]} >
+                <Form.Item style={{ marginBottom: "30px" }}  rules={[{ type: 'email', message: 'The input is not valid E-mail!', }, { required: true, message: 'Please input your E-mail!' }]} >
                   <Input placeholder="Email" type="text" value={email} size="large" onChange={(e) => setEmail(e.target.value)} size="large" />
                 </Form.Item>
               </Col>
             </Row>
             <Row gutter={16}>
               <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}>
-                <Form.Item style={{ marginBottom: "30px" }} name="phone" rules={[{ required: true, message: 'Please input your phone number!' }]} >
+                <Form.Item style={{ marginBottom: "30px" }}  rules={[{ required: true, message: 'Please input your phone number!' }]} >
                   <Input placeholder="Phone Number" type="text" value={number} size="large" onChange={(e) => setNumber(e.target.value)} size="large" />
                 </Form.Item>
               </Col>
               <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}>
-                <Form.Item style={{ marginBottom: "30px" }} name=" Country" rules={[{ required: true, message: "Please input your Country" }]} >
-                  <Input placeholder="Country" type="text" value={country} size="large" onChange={(e) => setCountry(e.target.value)} size="large" />
+                <Form.Item style={{ marginBottom: "30px" }} rules={[{ required: true, message: "Please input your Country" }]} >
+                  <Input placeholder="Organisation/Company" type="text" value={organisation} size="large" onChange={(e) => setOrganisation(e.target.value)} size="large" />
                 </Form.Item>
               </Col>
             </Row>
             <Row>
               <Col md={{ span: 24 }} lg={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }} >
-                <Form.Item style={{ marginBottom: "30px" }} name="message" placeholder="Message">
+                <Form.Item style={{ marginBottom: "30px" }}  placeholder="Message">
                   <Input.TextArea placeholder="Message" type="text" value={message} size="large" onChange={(e) => setMessage(e.target.value)} />
                 </Form.Item>
               </Col>
