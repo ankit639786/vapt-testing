@@ -37,11 +37,11 @@
 }
 
 input::placeholder{
-    color: black !important;
+    color: gray !important;
 }
 
 textarea::placeholder{
-    color: black !important;
+    color: gray !important;
 }
 
 .cta{

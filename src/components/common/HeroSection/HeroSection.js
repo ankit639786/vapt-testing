@@ -56,7 +56,7 @@ function HeroSection({
                 {
                   pointDescription?.map(ele =>
                     <p key={ele?.id} className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
-                      <b>{`${ele?.name}:`}</b>
+                      <b>{`${ele?.name}`}</b>
                       <p>{ele?.Desc_}</p>
                     </p>
                   )
