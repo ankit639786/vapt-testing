@@ -79,7 +79,7 @@ function HeroSection({
               </div>
             </div>
             <div className='col'>
-            <div data-aos={imgStart ==="start" ? "fade-right" : "fade-left"}>
+            <div data-aos="fade-up">
               <div className='home__hero-img-wrapper'>
                 <img src={img} alt={alt} className='home__hero-img' />
               </div>
