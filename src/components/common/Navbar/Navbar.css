@@ -35,7 +35,7 @@
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 30px;
   display: flex;
   align-items: center;
 }
@@ -129,7 +129,8 @@
   .navbar-logo {
     position: absolute;
     top: 0;
-    left: 0;
+    font-size: 25px;
+    left: -40px;
     transform: translate(25%, 50%);
   }
 
