@@ -5,7 +5,7 @@ import './HeroSection.css';
 
 //import { Button } from './Button';
 import { Button } from '../Button/Button';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 function HeroSection({
   lightBg,
@@ -70,7 +70,8 @@ function HeroSection({
                   )
                 }
                 </ul>
-                {buttonLabel&&<Link to="#">
+                {buttonLabel&&
+                <Link to="contact" spy={true} smooth={true}>
                   <Button buttonSize='btn--wide' buttonColor='blue'>
                     {buttonLabel}
                   </Button>
