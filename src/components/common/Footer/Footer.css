@@ -138,6 +138,13 @@
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 992px) {
+  .social-logo{
+    font-size: 30px;
+    margin: 0 10px 10px 10px;
+  }
+}
+
 .website-rights {
   color: #fff;
   margin-bottom: 16px;

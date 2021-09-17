@@ -10,7 +10,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-        <MdFingerprint className='navbar-icon' />VAPTTESTING INDIA
+        <MdFingerprint className='navbar-icon' />VAPTTESTING India
         </p>
         <p className='footer-subscription-text'>
         Secure your Web Application from the Cyber Attacks.
@@ -56,7 +56,7 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='banner' spy={true} smooth={true} className='social-logo'>
-            <MdFingerprint className='navbar-icon' />VAPTTESTING INDIA
+            <MdFingerprint className='navbar-icon' />VAPTTESTING India
             </Link>
           </div>
           <small className='website-rights'>V@PT2021</small>

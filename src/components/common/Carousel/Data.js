@@ -11,35 +11,35 @@ export const Paragraph = "We offer a comprehensive range of VAPT testing service
 export const Data = [
     {
         id:"1",
-        step:"Step1",
+        step:"Step 1",
         name:"Identify Goals & Objectives",
         image:service22,
         Description:"At first, our VAPT test experts get to know the goal and objective behind testing & identifying system vulnerabilities."
     },
     {
         id:"2",
-        step:"Step2",
+        step:"Step 2",
         name:"Scope",
         image:service33,
         Description:"We define a strategic scope of vulnerability assessment and penetration testing to see going in the right direction."
     },
     {
         id:"3",
-        step:"Step3",
+        step:"Step 3",
         name:"Gathering Information",
         image:service44,
         Description:"Our expert team of testing agents gathers the required information regarding network attacks and related to your IT environment."
     },
     {
         id:"4",
-        step:"Step4",
+        step:"Step 4",
         name:"Vulnerability Detection",
         image:service55,
         Description:"In this step, we automate the process of scanning the vulnerabilities inside your existing IT environment and identify the errors."
     },
     {
         id:"5",
-        step:"Step5",
+        step:"Step 5",
         name:"Information Analysis",
         image:service77,
         Description:"A strategic vulnerabilities elimination plan is made according to an end-to-end analysis done by testing experts."
